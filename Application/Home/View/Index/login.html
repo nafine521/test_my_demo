@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/login.css" />
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Admin/css/H-ui.css" />
+	<!--<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>-->
+	<script type="text/javascript" src="__ROOT__/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_tabs.js"></script>
+	<style type="text/css">
+		#header.type3{background: none;height: auto;}
+		#header.type2 .nav{display: none;}
+		#header.type2 .search{display: none;}
+	</style>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<form action="" method="post" id="form-content" class="ff_yh fs_14">
+		<p class="picture"></p>
+		<img src="__PUBLIC__images/icons/login_avatar.jpg" class="avatar" />
+		<div class="tab_box">
+			<p class="tabs fs_20">
+
+				<a href="#" class="tab last">电脑登录</a>
+			</p>
+
+			<div class="tab_content">
+				<span class="input icon account"></span>
+				<span class="input arrow"></span>
+				<input type="text" class="input text" placeholder="帐户名/邮箱" name="username" />
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="input icon password"></span>
+				<span class="input arrow"></span>
+				<input type="password" class="input text" placeholder="密码" name="password" />
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+
+				<!-- <span class="tag">验证码</span> -->
+				<input type="text" class="input verify" placeholder="输入验证码" name="verify" />
+
+				<img src="{:U('verify')}" id="verifySrc" style="cursor: pointer"/>
+
+				<a href="javascript:;" class="change_verify" onclick="verify()">看不清?换一张</a>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+
+			</div>
+		</div>
+		<p class="remember_login">
+			<span id="beselect"><input type="checkbox" name="online" value="1" />
+			记住登录状态</span>
+			<a href="{:U('change_password')}" class="forget_password">修改密码？</a>
+			<!-- <span class="other_login">
+				<a href="#" class="weibo_login"></a>
+				<a href="#" class="qq_login"></a>
+				<a href="#" class="weixin_login"></a>
+			</span> -->
+		</p>
+		<input type="submit" value="登录" class="submit block_button fs_18" />
+	</form>
+	<!-- //主体#content -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+
+	<script type="text/javascript" src="__ROOT__/Public/Admin/lib/Validform/5.3.2/Validform.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		// //选中input
+		// $("#beselect").click(function(){
+		// 	if ($(this).children().is(":checked")) {
+		// 		$(this).children().attr("checked",false);
+		// 	}else{
+		// 		$(this).children().attr("checked",true);
+		// 	}
+		// });
+		
+		
+
+	// 登陆ajax
+	  $("#form-content").Validform({
+      tiptype:2,
+      ajaxPost:true,
+      callback:function(form){
+            if(form.status=='y'){
+                setTimeout(function () {
+                    $.Hidemsg();
+                    if(top.location!=self.location){
+					  //说明你的页面在if框架中显示
+					   var index = parent.layer.getFrameIndex(window.name);//获取当前页面的索引
+                    	parent.location.reload();//刷新父窗口
+                    	parent.layer.close(index);//关闭当前窗口
+					}else{
+						//说明你的页面不是在if框架中显示
+						location.href="{:U('Member/member')}";
+					}
+                   
+                },1000);
+            }
+        }
+  	});
+
+	// var _hmt = _hmt || [];
+	// (function() {
+	//   var hm = document.createElement("script");
+	//   hm.src = "//hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
+	//   var s = document.getElementsByTagName("script")[0]; 
+	//   s.parentNode.insertBefore(hm, s);
+	// })();
+	// var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	// document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080836300300be57b7f34f4b3e97d911' type='text/javascript'%3E%3C/script%3E"));
+	});
+    // 切换验证码图片
+    function verify () {
+        $("#verifySrc").attr("src",$("#verifySrc").attr("src")+"?"+Math.random());
+    }
+    $("#verifySrc").click(function () {
+        verify ();
+    });
+	</script>
+</body>
+</html>

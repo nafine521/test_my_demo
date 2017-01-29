@@ -1,0 +1,229 @@
+/* 内容区#content */
+#content.type1 {
+	width: 843px;
+	margin: 0 auto;
+}
+
+/** 内容主体**/
+#content .main {
+	width: 843px;
+}
+
+#content .main h1 {
+	height: 50px;
+	line-height: 50px;
+	color: #4b4b4a;
+}
+
+#content .main h1 a {
+	display: inline-block;
+	margin-left: 30px;
+	font-weight: normal;
+	color: #065fcd;
+	vertical-align: middle;
+}
+
+#content .main h1 a:hover {
+	text-decoration: underline;
+}
+
+#content .main .info_box {
+	line-height: 36px;
+	padding: 27px 0 21px 0;
+	border: #e0dcdc 1px solid;
+	background-color: #fdfdf7;
+}
+
+#content .main .info_box .tag {
+	float: left;
+	width: 95px;
+	text-align: right;
+	color: #676565;
+}
+
+#content .main .info_box .text {
+	float: right;
+	width: 739px;
+	color: #000;
+}
+
+#content .main .info_box .text.name {
+	font-family: Arial;
+}
+
+#content .main .info_box .change_addr {
+	float: left;
+	height: 36px;
+	margin-left: 95px;
+	color: #f00;
+}
+
+#content .main .info_box .change_addr:hover {
+	text-decoration: underline;
+}
+
+#content .main .item_list li.header {
+	height: 34px;
+	line-height: 34px;
+	padding-left: 20px;
+	color: #4b4b4a;
+	border: #eeecec 1px solid;
+	background-color: #f5ece0;
+}
+
+#content .main .item_list li.entry {
+	height: 88px;
+	padding: 24px 0 25px 20px;
+	border: #e0dcdc 1px solid;
+	border-top: none;
+	background-color: #fdfdf7;
+}
+
+#content .main .item_list .float {
+	float: left;
+	text-align: center;
+}
+
+#content .main .item_list li.entry .float {
+	height: 88px;
+	line-height: 64px;
+}
+
+#content .main .item_list .float.name {
+	width: 336px;
+	text-align: left;
+}
+
+#content .main .item_list li.entry .float.name img {
+	float: left;
+	width: 81px;
+	height: 82px;
+	margin: 0 22px 0 46px;
+	padding: 3px;
+	border-radius: 10px;
+	background: url('../images/bg/favorite_dashline.jpg') no-repeat center center;
+}
+
+#content .main .item_list li.entry .float.name .title {
+	height: 32px;
+	line-height: 32px;
+	color: #010101;
+}
+
+#content .main .item_list li.entry .float.name .category {
+	height: 32px;
+	line-height: 32px;
+	color: #2f2e2e;
+}
+
+#content .main .item_list .float.price {
+	width: 185px;
+	color: #4b4b4a;
+}
+
+#content .main .item_list li.entry .float.price {
+	font-weight: bold;
+}
+
+#content .main .item_list .float.amount {
+	width: 143px;
+}
+
+#content .main .item_list li.entry .float.amount {
+	color: #403e3f;
+}
+
+#content .main .item_list .float.subtotal {
+	width: 150px;
+}
+
+#content .main .item_list li.entry .float.subtotal {
+	font-weight: bold;
+	color: #fc0830;
+}
+
+#content .main .submit_order {
+	height: 56px;
+	margin-top: 48px;
+	border-bottom: #e6e3e3 1px solid;
+}
+
+#content .main .submit_order .check {
+	float: left;
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+	margin-top: 13px;
+	color: #565555;
+	border-bottom: #692587 5px solid;
+	vertical-align: bottom;
+}
+
+#content .main .submit_order .check span {
+	color: #000;
+}
+
+#content .main .submit_order .check input {
+	margin: 0 4px 0 10px;
+	vertical-align: middle;
+}
+
+#content .main .submit_order .total {
+	float: right;
+	height: 46px;
+	line-height: 46px;
+	margin-top: 10px;
+	font-weight: bold;
+	color: #1d1d1d;
+}
+
+#content .main .submit_order .total .number {
+	font-size: 24px;
+	color: #fa1c1c;
+	vertical-align: baseline;
+}
+
+#content .main .submit_order .submit {
+	float: right;
+	width: 187px;
+	height: 54px;
+	line-height: 54px;
+	margin: 2px 0 0 24px;
+	font-size: 24px;
+	color: #fff;
+	border: #eeecec 1px solid;
+	border-bottom: none;
+	background-color: #692687;
+	cursor: pointer;
+	vertical-align: bottom;
+}
+
+/* 成功和失败弹出框 */
+.popup_box {
+	position: fixed;
+	display: none;
+	left: 50%;
+	top: 50%;
+	margin: -319px 0 0 -316px;
+	width: 632px;
+	height: 638px;
+	z-index: 5;
+}
+
+.popup_box .close {
+	position: absolute;
+	display: block;
+	right: 153px;
+	top: 97px;
+	width: 37px;
+	height: 37px;
+	background: url('../images/icons/close.gif') no-repeat center center;
+}
+
+#popUpSuccess {
+	background: url('../images/bg/success_bg.png') no-repeat center center;
+}
+
+#popUpFail {
+	background: url('../images/bg/fail_bg.png') no-repeat center center;
+}

@@ -1,0 +1,27 @@
+新建一张数据表
+img(id,lid,username,fenlei,img);
+其中：lid代表每次发布的序号，从100开始
+
+
+插入数据的时候的SQL语句
+首先查询上一个lid,得到新的lid=lid+1;
+然后本次发布的lid都是lid+1，以此类推
+insert into img(lid,username,fenlei,img) values ('101','aaa','商业下载','$img1');
+另外还需要在tiezi表中新增一个字段lid，和这个img的数据表对应
+insert into tiezi(....,lid) values (.....,'101');
+
+
+输出的时候，查询语句如下,然后循环输出即可
+select * from img where username='aaa' and  lid='101';
+while(){
+	echo "<img src='"$img"' <br>";
+}
+
+
+删除数据和图片,先删除图片,然后再删除数据
+select * from img where username='aaa' and  lid='101';
+while(){
+	unlink($img);
+}
+delete from img where lid='101';
+

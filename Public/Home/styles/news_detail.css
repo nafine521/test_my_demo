@@ -1,0 +1,113 @@
+/* 内容区#content */
+#content.type1 {
+	width: 953px;
+	margin: 0 auto;
+}
+
+/** 内容主体.main_text **/
+#content .main .main_text {
+	width: 675px;
+}
+
+#content .main .main_text .center_text {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+#content .main .main_text .center_text.title {
+	margin-top: 13px;
+	color: #692687;
+}
+
+#content .main .main_text .center_text.pub_time {
+	margin-bottom: 13px;
+	color: #373737;
+	border-bottom: #afaeae 1px dashed;
+}
+
+#content .main .main_text .article {
+	line-height: 36px;
+	text-indent: 2em;
+	color: #010101;
+}
+
+#content .main .main_text .image_text {
+	width: 401px;
+	line-height: 21px;
+	margin: 31px 145px 0 126px;
+}
+
+#content .main .main_text .image_text p {
+	text-indent: 2em;
+	color: #010101;
+}
+
+#content .main .main_text .image_text .img {
+	float: left;
+	width: 144px;
+	height: 178px;
+}
+
+#content .main .main_text .image_text .ribbon {
+	float: left;
+	width: 257px;
+	height: 75px;
+}
+
+#content .main .main_text .article_nav {
+	height: 20px;
+	line-height: 20px;
+	padding: 44px 10px 36px 0;
+	text-align: right;
+	border-bottom: #747d97 1px dashed;
+}
+
+#content .main .main_text .article_nav a {
+	display: inline-block;
+	margin: 0 3px;
+	padding: 0 10px;
+	text-align: center;
+	color: #fff;
+	border-radius: 10px;
+}
+
+#content .main .main_text .article_nav .prev {
+	background-color: #692687;
+}
+
+#content .main .main_text .article_nav .next {
+	background-color: #07d7e4;
+}
+
+#content .main .main_text .news_list {
+	width: 288px;
+}
+
+#content .main .main_text .news_list.related {
+	float: left;	
+}
+
+#content .main .main_text .news_list.recommend {
+	float: right;
+	margin-right: 22px;
+}
+
+#content .main .main_text .news_list li.headline {
+	margin: 14px 0 14px 5px;
+}
+
+#content .main .main_text .news_list li.entry {
+	height: 26px;
+	line-height: 26px;
+	color: #692687;
+	overflow: hidden;
+}
+
+#content .main .main_text .news_list li.entry a {
+	color: #3a3a3a;
+}
+
+#content .main .main_text .news_list li.entry a:hover {
+	color: #692687;
+}

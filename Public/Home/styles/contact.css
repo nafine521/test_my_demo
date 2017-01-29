@@ -1,0 +1,76 @@
+/* 内容区#content */
+#content.type1 {
+	width: 851px;
+	margin:0 auto;
+	
+}
+
+
+/** 内容主体.main_text **/
+#content .main .main_text {
+	width: 573px;
+}
+
+#content .main .main_text .tag {
+	float: left;
+	width: 79px;
+	height: 61px;
+	line-height: 61px;
+	color: #161616;
+}
+
+#content .main .main_text .input {
+	float: left;
+	line-height: 13px;
+	margin: 18px 0;
+	padding: 5px;
+	border: #c9cacf 1px solid;
+}
+
+#content .main .main_text .input.text {
+	width: 206px;
+	height: 13px;
+}
+
+#content .main .main_text .input.textarea {
+	width: 482px;
+	height: 139px;
+	resize: none;
+}
+
+#content .main .main_text .submit {
+	width: 72px;
+	height: 28px;	
+	border-radius: 12px;
+	background-color: #692687;
+}
+
+#content .main .main_text .description {
+	line-height: 37px;
+	color: #010101;
+}
+
+/* 百度地图插件 */
+#content .main .main_text #map {
+	width: 571px;
+	height: 238px;
+	margin-top: 32px;
+	border: #dfdfdf 1px solid;
+}
+
+.iw_poi_title {
+	padding-right: 13px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #cc5522;
+	overflow: hidden;
+	white-space:nowrap;
+}
+
+.iw_poi_content {
+	padding-top: 4px;
+	font: 12px arial,sans-serif;
+	overflow: visible;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word;
+}

@@ -1,0 +1,24 @@
+[ 2016-12-31T10:36:38+08:00 ] ::1 /Q2/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: tp1611_user E:\demo\Q2\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' E:\demo\Q2\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+

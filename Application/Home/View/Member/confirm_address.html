@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>确认地址页</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/confirm_address.css" />
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Admin/css/H-ui.css" />
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/page_confirm_address.js"></script>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<form action="{:U('trans_order')}" method="post" id="form-content" class="main ff_yh fs_14">
+			<ul class="confirm_nav plain fs_16">
+				<li class="first">
+					确认订单
+					<span class="right_arrow"></span>
+				</li>
+				<li class="current">
+					<span class="left_arrow"></span>
+					填写核对订单
+					<span class="right_arrow"></span>
+				</li>
+				<li class="last">
+					<span class="left_arrow current"></span>
+					订单提交
+				</li>
+				<!-- 清除浮动样式 -->
+				<li class="clear"></li>
+			</ul>
+			<h1 class="fs_16">
+				确认收货地址
+				<a href="javascript:layer_show('添加地址','{:U('addressAdd')}',1200,'');" class="ff_simsun fs_14">管理收货地址</a>
+			</h1>
+			<div class="info_box">
+				<empty name="default_address">
+					<h1 class="fs_16">
+						还未设置地址 请
+						<a href="javascript:layer_show('添加地址','{:U('addressAdd')}',1200,'');" class="ff_simsun fs_14">立即添加地址！</a>
+						<else/>
+
+				<span class="title fs_14 tag">当前收货地址</span>
+				<span class="text">&nbsp;<input type="radio" checked="checked" class="ca_radio" name="address_id" value="{$default_address.id}"/></span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">收货人：</span>
+				<span class="text name">{$default_address.consignee}</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">手机：</span>
+				<span class="text ff_simsun">{$default_address.tel}</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">收货区域：</span>
+				<span class="text ff_simsun fs_12">{$default_address.province}</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">详细地址：</span>
+				<span class="text ff_simsun fs_12">{$default_address.detail_address}</span>
+				<!-- 清除浮动样式 -->
+
+				</empty>
+
+				<div class="clear"></div>
+
+				<ul class="addr_list">
+					<volist name="address_list" id="v">
+						<if condition="$v['id'] neq $default_address['id']">&nbsp;
+
+					<li>
+						<input type="radio" name="address_id" value="{$v.id}"/>
+						{$v.province} &nbsp;{$v.detail_address}（{$v.consignee}收）
+					</li>
+						</if>
+				</volist>
+				</ul>
+			</div>
+			<h1 class="fs_16">购物清单</h1>
+			<ul class="item_list">
+				<li class="header">
+					<span class="float name">商品名称</span>
+					<span class="float price">单价（元）</span>
+					<span class="float amount">数量</span>
+					<span class="float subtotal">小计</span>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+				</li>
+				<volist name="cart_list" id="v">
+				<li class="entry">
+					<div class="float name ff_simsun fs_12">
+						<input type="hidden" name="order_id[{$v.order_id}]" value="{$v.order_id}">
+						<img src="__ROOT__{$v.img}" />
+						<p class="title">{$v.name|cutStr=13}</p>
+						<p class="category">品种分类：{$v.cat_name}</p>
+					</div>
+					<p class="float price"><php>
+						if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price'];}else{echo $v['official_price'];}
+					</php>元</p>
+					<p class="float amount">{$v.s_num}</p>
+					<p class="float subtotal"><php>
+						if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price']*$v['s_num'];}else{echo $v['official_price']*$v['s_num'];}
+					</php>元</p>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+				</li>
+				</volist>
+
+			</ul>
+			<div class="submit_order">
+				<span class="check fs_12" >
+					<span class="fs_14">&nbsp;</span>
+					<input type="radio" checked="checked"/>
+					包含运费及服务费（<php>echo $delivery['insurance']+$delivery['fee'];</php>元）<input
+						type="hidden" name="insurance" value="{$delivery.insurance}"><input
+						type="hidden" name="delivery" value="{$delivery.fee}">
+				</span>
+				<input type="submit" value="提交订单" class="submit ff_yh" />
+				<span class="total">
+					应付总额:<span class="number">{$trans_price}元</span>
+					<input type="hidden" name="trans_price" value="{$trans_price}">
+				</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+			</div>
+		</form>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __提交订单成功框#popUpSuccess -->
+	<div id="popUpSuccess" class="popup_box">
+		<a href="#" onclick="return popUpApp.close(this);" class="close"></a>
+	</div>
+	<!-- //提交订单成功框#popUpSuccess -->
+	<!-- __提交订单失败框#popUpFail -->
+	<div id="popUpFail" class="popup_box">
+		<a href="#" onclick="return popUpApp.close(this);" class="close"></a>
+	</div>
+	<!-- //提交订单失败框#popUpFail -->
+	<script type="text/javascript" src="__ROOT__/Public/Admin/lib/Validform/5.3.2/Validform.min.js"></script>
+	<script type="text/javascript">
+        // 首先ajax生成订单再进行跳转
+        $("#form-content").Validform({
+            tiptype:2,
+            ajaxPost:true,
+            callback:function(form){
+                if(form.status=='y'){
+                    popUpApp.success();
+                    setTimeout(function () {
+                        $.Hidemsg();
+                       location.href="{:U('Api/Index/index')}";
+                    },1000);
+                }else{
+                    popUpApp.fail();
+				}
+            }
+        });
+	</script>
+</body>
+</html>

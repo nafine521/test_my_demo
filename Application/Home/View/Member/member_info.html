@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>个人资料</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/member_info.css" />
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Admin/css/H-ui.css" />
+
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_sidebar_toggle.js"></script>
+	<style>
+		.label{background: none;}
+		#address{color: darkred;text-decoration: #ff5663 ;text-decoration: underline;}
+	</style>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<ul class="sidebar type2 ff_yh fs_14">
+				<li class="banner ff_fz">
+					<p class="cn">会员中心</p>
+					<p class="en fs_14">Member Center</p>
+				</li>
+				<volist name="memberNav" id="item">
+					<li class="entry">
+						<p class="header order">{$item.name}</p>
+						<ul class="sub_entry">
+							<if condition="$item['children']">
+								<volist name="item['children']" id="v">
+									<li><a href="{:U($v['link'])}">{$v.name}</a></li>
+
+								</volist>
+								<else/>
+								<p class="header trade"><a href="{:U($item['link'])}">交易管理</a></p>
+							</if>
+
+						</ul>
+					</li>
+				</volist>
+
+
+				<if condition="$promo_pro">
+					<li class="buy" style="background:url('__ROOT__{$promo_pro.img}') no-repeat center center"><a href="{:U('Product/product',array('id'=>$promo_pro['id']))}" title="热卖产品"><img src="__PUBLIC__images/bg/sidebar_buy.png" title="点击购买" id="buyHot"></a></li>
+				</if>
+			</ul>
+			<form action="" method="post" class="main_text ff_simsun fs_12" id="member-info">
+				<input type="hidden" value="{$Think.session.tp1611_user.id}" name="id" datatype="*" nullmsg="您的登录信息已过期，请重新登录"/>
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="{:U('member')}">会员中心</a>
+					&gt;&gt;
+					<a href="javascript:;" class="current">个人信息</a>
+				</p>
+				<h1 class="headline type2 ff_yh fs_18">基本信息</h1>
+				<span class="tag label">姓　　名：</span>
+				<input type="text" class="input long" name="compellation" value="{$info['compellation']}" />
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag label">性　　别：</span>
+				<input type="radio" name="sex" value="1" class="radio" 	<if condition="$info.sex gt 0">checked="checked"</if> />
+				<label class="tag tip">男</label>
+				<input type="radio" name="sex" value="0" class="radio" <if condition="$info.sex eq 0">checked="checked"</if>/>
+				<label class="tag tip">女</label>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag label">生　　日：</span>				
+				<div class="formControls col-3">
+					<input type="text" onfocus="WdatePicker({el:$dp.$('d12')})" id="datemax" class="input-text Wdate input short" style="width:180px;" name="birthday"  value="{$info['birthday']> 0?$info['birthday']|date='Y-m-d',###:''}">
+			</div>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag label">所 在 地：</span>
+
+				<div id="city">
+					<select class="prov" name="prov"  >
+
+					</select>
+					<select class="city" disabled="disabled" name="city">
+
+					</select>
+					<select class="dist" disabled="disabled" name="dist" >
+
+					</select>
+				</div>
+					<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag label">手机号码：</span>
+				<input type="text" class="input long" name="tel" value="{$info.tel}" />
+				<span class="tag tip">请真实填写，用于系统通知和找回密码</span>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				
+				<div class="current_addr">
+					<p class="title fs_14">当前收货地址</p>
+					<!--<input type="radio" checked="checked" class="ca_radio" name="delivery"/>-->
+					<empty name="delivery_address"><p>暂未添加</p><else/><p class="text">{$delivery_address.province} {$delivery_address.detail_address}（{$delivery_address.consignee}收）</p></empty>
+
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+					<a href="javascript:layer_show('添加地址','{:U('addressAdd')}',1200,'');" class="fs_14" id="address">管理收货地址</a>
+				</div>
+
+				<input type="submit" value="保存修改" class="float_btn save ff_yh fs_14" />
+				<input type="reset" value="返回" class="float_btn back ff_yh fs_14" />
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+			</form>
+		</div>
+
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+	</div>
+
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+
+	<script type="text/javascript" src="__ROOT__/Public/Admin/lib/My97DatePicker/WdatePicker.js"></script>
+	<script type="text/javascript" src="__PUBLIC__js/jquery.cityselect.js"></script>
+	<script type="text/javascript" src="__PUBLIC__js/city.min.js"></script>
+	<script type="text/javascript">
+        $(function() {
+            $("#city").citySelect({
+                url: "__PUBLIC__js/city.min.js",                
+               	prov:"{$info['prov']}",
+ 				city:"{$info['city']}",
+ 				dist:"{$info['dist']}",
+                nodata: "none"
+            });
+        });
+       
+	
+
+	</script>
+	<script type="text/javascript" src="__ROOT__/Public/Admin/lib/Validform/5.3.2/Validform.min.js"></script>
+	<script type="text/javascript">
+	 // ajax验证
+$("#member-info").Validform({
+		tiptype:2,
+		ajaxPost:true,
+		callback:function(form){			
+			if(form.status=='y'){
+                setTimeout(function () {
+                    $.Hidemsg();                    
+                    location.href="{:U('member')}";            
+                },1000);
+			}
+		}
+	});
+	</script>
+
+
+
+</body>
+</html>

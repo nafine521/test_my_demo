@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>产品中心</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/product.css" />
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/page_product.js"></script>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<include file="Public/subnav" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+			<div class="main_text ff_simsun fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="{:U('Index/index')}">首页</a>
+					&gt;&gt;
+					<a href="javascrpt:;" class="current">产品中心</a>
+				</p>
+				<ul class="product_list">
+					<volist name="list" id="v">
+					<li>
+						<div class="img">
+							<img src="__ROOT__{$v.img}" />
+							<a href="{:U('Product/product_detail',array('id'=>$v['id']))}" class="ff_fz fs_20">点击购买&gt;&gt;</a>
+						</div>
+						<p class="title ff_yh fs_18">{$v.name|cutStr=20}</p>
+						<p class="detail">
+							￥{$v.official_price} 【<span class="tag">官方价格</span>】 <span class="tab">容量：</span>{$v.capacity} ml<br />
+							<span class="tab">功效：</span>
+							<volist name="v.virtue" id="value">
+							<span class="func tag">{$value}</span>
+							</volist>
+						</p>
+						<p class="description">
+							<span class="tab">产品详情：</span>
+							{$v.description|cutStr=65}
+							<a href="{:U('Product/product_detail',array('id'=>$v['id']))}" class="view_all">查看全部>></a>
+						</p>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</li>
+					</volist>
+
+				</ul>
+				<div class="page_nav">
+					{$page}
+				</div>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+</body>
+</html>

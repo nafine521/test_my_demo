@@ -1,0 +1,138 @@
+/* 内容区#content */
+#content.type1 {
+	width: 881px;
+	margin: 0 auto;
+}
+
+/** 内容主体.main_text **/
+#content .main .main_text {
+	width: 603px;
+}
+
+#content .main .main_text .headline.type2 {
+	margin: 7px 0 16px 0;
+	background: url('../images/icons/lockfolder.gif') no-repeat left center;
+}
+
+#content .main .main_text .tag {
+	float: left;
+	line-height: 48px;
+}
+
+#content .main .main_text .tag.label {
+	width: 89px;
+	padding-left: 27px;
+	color: #1c1c1b;
+}
+
+#content .main .main_text .tag.tip {
+	padding-left: 10px;
+	color: #959595;
+}
+
+#content .main .main_text .input {
+	float: left;
+
+	line-height: 13px;
+	margin: 10px 0 11px 0;
+	padding: 5px;
+	border: #d2d2d2 1px solid;
+}
+
+#content .main .main_text .input.long {
+	width: 221px;
+}
+
+#content .main .main_text .input.short {
+	width: 162px;
+}
+
+#content .main .main_text .radio {
+	float: left;
+	width: 11px;
+	height: 11px;
+	margin: 18px 5px 19px 15px;
+}
+
+#content .main .main_text select {
+	float: left;
+	height: 23px;
+	line-height: 23px;
+	margin: 10px 5px 11px 0;
+	border: #d2d2d2 1px solid;
+}
+
+#content .main .main_text .current_addr {
+	margin: 35px 24px 18px 28px;
+	padding: 15px 23px 0 41px;
+	background: url('../images/icons/pin.gif') #f6ede0 no-repeat 19px 16px;
+}
+
+#content .main .main_text .current_addr .title {
+	float: left;
+	line-height: 21px;
+	color: #ff0012;
+}
+
+#content .main .main_text .current_addr .ca_radio {
+	float: left;
+	width: 13px;
+	height: 13px;
+	margin: 3px 5px 26px 7px;
+}
+
+#content .main .main_text .current_addr .text {
+	line-height: 21px;
+}
+
+#content .main .main_text .current_addr .edit_addr {
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	margin-top: 10px;
+	text-align: right;
+	color: #090fff;
+}
+
+#content .main .main_text .current_addr .edit_addr:hover {
+	text-decoration: underline;
+}
+
+#content .main .main_text .addr_list {
+	margin: 0 24px 28px 81px;
+}
+
+#content .main .main_text .addr_list li {
+	line-height: 27px;
+}
+
+#content .main .main_text .addr_list li input {
+	vertical-align: middle;
+}
+
+#content .main .main_text .addr_list li a {
+	color: #f00;
+}
+
+#content .main .main_text .addr_list li a:hover {
+	text-decoration: underline;
+}
+
+#content .main .main_text .float_btn {
+	height: 29px;
+	line-height: 29px;
+	padding: 0 22px;
+	text-align: center;
+	border-radius: 2px;
+}
+
+#content .main .main_text .float_btn.save {
+	margin: 0 15px 0 29px;
+	color: #fff;
+	background-color: #784093;
+}
+
+#content .main .main_text .float_btn.back {
+	color: #625d5d;
+	background-color: #dcd9d4;
+}

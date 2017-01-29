@@ -1,0 +1,162 @@
+/* 内容区#content */
+#content.type1 {
+	width: 942px;
+	margin: 0 auto;
+}
+
+/** 内容主体.main_text **/
+#content .main .main_text {
+	width: 664px;
+}
+
+#content .main .main_text .headline.type2 {
+	background: url('../images/icons/basket.gif') no-repeat 9px center;
+}
+
+#content .main .main_text .item_list {
+	margin: 28px 0 10px 0;
+}
+
+#content .main .main_text .item_list .item {
+	padding-left: 18px;
+}
+
+#content .main .main_text .item_list .header {
+	height: 35px;
+	line-height: 35px;
+	background-color: #f5ece0;
+}
+
+#content .main .main_text .item_list .header input {
+	vertical-align: middle;
+}
+
+#content .main .main_text .item_list li.entry {
+	margin-bottom: 17px;
+	background-color: #fdfdf7;
+}
+
+#content .main .main_text .item_list li.entry .header {
+	color: #4b4b4a;
+}
+
+#content .main .main_text .item_list li.entry .header .delete_this {
+	float: right;
+	width: 13px;
+	height: 35px;
+	margin: 0 32px;
+	background: url('../images/icons/dustbin.gif') no-repeat center center;
+}
+
+#content .main .main_text .item_list li.action {
+	height: 60px;
+	line-height: 60px;
+	color: #4b4b4a;
+}
+
+#content .main .main_text .item_list li.action input {
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+#content .main .main_text .item_list li.action a {
+	display: inline-block;
+	margin: 0 5px;
+	color: #0f88d4;
+}
+
+#content .main .main_text .item_list li.action a {
+	text-decoration: underline;
+}
+
+#content .main .main_text .item_list .float {
+	float: left;
+	text-align: center;
+}
+
+#content .main .main_text .item_list li.entry .float {
+	height: 88px;
+	margin: 25px 0;
+}
+
+#content .main .main_text .item_list .float.name {
+	width: 273px;
+	text-align: left;
+}
+
+#content .main .main_text .item_list li.entry .float.name img {
+	float: left;
+	width: 81px;
+	height: 82px;
+	margin-right: 21px;
+	padding: 3px;
+	border-radius: 10px;
+	background: url('../images/bg/favorite_dashline.jpg') no-repeat center center;
+}
+
+#content .main .main_text .item_list li.entry .float.name .title {
+	height: 21px;
+	line-height: 21px;
+	margin-top: 23px;
+	color: #010101;
+}
+
+#content .main .main_text .item_list li.entry .float.name .category {
+	height: 21px;
+	line-height: 21px;
+	margin-bottom: 23px;
+	color: #2f2e2e;
+}
+
+#content .main .main_text .item_list .float.price {
+	width: 107px;
+}
+
+#content .main .main_text .item_list li.entry .float.price {
+	line-height: 88px;
+	color: #4b4b4a;
+}
+
+#content .main .main_text .item_list .float.amount {
+	width: 76px;
+}
+
+#content .main .main_text .item_list li.entry .float.amount {
+	line-height: 88px;
+	color: #403e3f;
+}
+
+#content .main .main_text .item_list .float.status {
+	width: 112px;
+}
+
+#content .main .main_text .item_list li.entry .float.status {
+	line-height: 22px;
+	color: #4b4b4a;
+}
+
+#content .main .main_text .item_list li.entry .float.status span,
+#content .main .main_text .item_list li.entry .float.status a {
+	display: block;
+	color: #4b4b4a;
+}
+
+#content .main .main_text .item_list .float.actions {
+	width: 77px;
+}
+
+#content .main .main_text .item_list li.entry .float.actions {
+	height: 42px;
+	line-height: 21px;
+	padding: 23px 0;
+	color: #4b4b4a;
+}
+
+#content .main .main_text .item_list li.entry .float.actions a {
+	display: block;
+	color: #4b4b4a;
+}
+
+#content .main .main_text .item_list li.entry .float.actions a:hover {
+	text-decoration: underline;
+}

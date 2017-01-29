@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/index.css" />
+	
+
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type2" style="width:1217px;background-position:left top;">
+		<div class="box1 ff_simsun fs_12">
+			<h1 class="ff_fz fs_18">品牌介绍</h1>
+			<img src="__PUBLIC__images/imgs/index_introduction_img.png" />
+			<p>{$brand.description|cutStr=150}</p>
+			<!-- 清除浮动样式 -->
+		</div>
+		<div class="box2 ff_simsun fs_12">
+			<h1 class="ff_fz fs_18">产品系列</h1>
+			<div class="slideshow">
+				<div class="wrapper">
+					<ul class="image plain">
+					<volist name="series_list" id="v">
+						<li>
+							<a href="{:U('Product/product',array('series_id'=>$v['id']))}"><img src="__ROOT__{$v.img}" /></a>
+							<h2 class="fs_12">{$v.name}</h2>
+							<p>{$v.description|cutStr=50}</p>
+							<!-- 清除浮动样式 -->
+							<div class="clear"></div>
+						</li>
+						</volist>
+					</ul>
+					<ul class="nav">
+						<li class="prev"></li>
+						<li class="next"></li>
+					</ul>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+			</div>
+			</div>
+		</div>
+		<div class="box3 ff_simsun fs_12">
+			<h1 class="ff_fz fs_18">新闻动态</h1>
+			<ul class="news_list">
+				<li class="more">
+					<a href="{:U('News/news')}" class="more">More&gt;&gt;</a>
+				</li>
+				<volist name="news_list" id="v">
+				<li>
+					<a href="{:U('News/news_detail')}" class="entry">{$v.title}</a>
+					<span class="date">{$v.pubdate|date="Y/m/d",###}</span>
+				</li>
+				</volist>
+			</ul>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+		
+</body>
+</html>

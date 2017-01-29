@@ -1,0 +1,11 @@
+<ul class="sidebar type1 ff_fz fs_18">
+    <volist name="subnavList" id="v">
+        <li><a href="{:U($v['link'])}" <php> if($action==strchr($v['link'],'/',true) && $action!="Contact")echo "style='color:#692687;'";</php> >{$v.name}</a></li>
+    </volist>
+    <if condition="$promo_pro">
+    <li class="buy" style="background:url('__ROOT__{$promo_pro.img}') no-repeat center center;">
+        <a href="{:U('Product/product_detail',array('id'=>$promo_pro['id']))}" title="热卖产品"><img src="__PUBLIC__images/bg/sidebar_buy.png" title="点击购买" id="buyHot"></a>
+
+    </li>
+    </if>
+</ul>

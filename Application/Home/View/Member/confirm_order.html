@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>确认订单页</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/confirm_order.css" />
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_select_all.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_item_calculator.js"></script>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<form action="{:U('Member/confirm_address')}" method="post" class="main ff_yh fs_14" onsubmit="return selectorder()">
+			<ul class="confirm_nav plain fs_16">
+				<li class="first current">
+					确认订单
+					<span class="right_arrow"></span>
+				</li>
+				<li>
+					<span class="left_arrow"></span>
+					填写核对订单
+					<span class="right_arrow"></span>
+				</li>
+				<li class="last">
+					<span class="left_arrow"></span>
+					订单提交
+				</li>
+				<!-- 清除浮动样式 -->
+				<li class="clear"></li>
+			</ul>
+			<ul class="item_list">
+				<li class="action">
+					<!-- 全选按钮必须给定一个groupid -->
+					<!-- 响应此全选按钮的复选框必须有和此groupid相同的selectid -->
+					<input type="checkbox" groupid="g1" />
+					全选
+				</li>
+				<li class="header">
+					<span class="float name">商品名称</span>
+					<span class="float price">单价（元）</span>
+					<span class="float amount">数量</span>
+					<span class="float discount">优惠方式(元)</span>
+					<span class="float subtotal">小计</span>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+				</li>
+				<volist name="cartList" id="v">
+				<li class="entry">
+					<div class="float name ff_simsun fs_12">
+						<input type="checkbox" selectid="g1" name="order_id[{$v.order_id}]" value="{$v.order_id}"/>
+						<img src="__ROOT__{$v.img}" />
+						<p class="title">{$v.name|cutStr=13}</p>
+						<p class="category">品种分类：{$v.cat_name}</p>
+					</div>
+					<p class="float price">
+
+						<php>
+							if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price'];
+						</php>元
+						<span class="tag customize_select">
+							<select class="ff_yh fs_12">
+								<option selected="selected">卖家促销</option>
+							</select>
+						</span>
+						<php>}else{echo $v['official_price'];}</php>
+					</p>
+					<p class="float amount">{$v.s_num}</p>
+					<input type="hidden" name="s_num[{$v.order_id}]" value="{$v.s_num}">
+					<p class="float discount">
+						<php>
+							if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo "正在促销";}else{echo "无优惠";}
+						</php>
+					</p>
+					<p class="float subtotal"><php>
+						if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price']*$v['s_num'];}else{echo $v['official_price']*$v['s_num'];}
+					</php>元</p>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+				</li>
+
+				</volist>
+
+			</ul>
+			<p class="message">
+				给卖家留言：
+				<input type="text" placeholder="选填：对本次交易的说明（建议填写已经和卖家达成一致的说明）" name="msg"/>
+			</p>
+			<div class="checkout_box fs_12">
+				<p>
+					<span class="tag type1">运送方式：</span>
+					<span class="tag type2">
+						<input type="radio" checked="checked"/>
+						普通配送
+						<select class="ff_yh fs_12" name="delivery">
+
+							<option selected="selected" value="{$delivery.fee}">快速　<empty name="delivery.fee">免邮<else/>{$delivery.fee}元 <input
+									type="hidden" name="delivery" value="{$delivery.fee}"> </empty></option>
+
+						</select>
+					</span>
+					<span class="tag type3 center">
+						¥<span class="number red fs_14" id="delivery"><empty name="delivery.fee">0.00<else/>{$delivery.fee}</empty></span>
+					</span>
+				</p>
+				<notempty name="delivery.insurance">
+				<p>
+					<span class="tag type1">运费险：</span>
+					<span class="tag type2">购买退货运费险，退货可赔付{$delivery.compensate}元 [<a href="javascript:;">?</a>]</span>
+					<input type="hidden" name="insurance" value="{$delivery['insurance']}">
+					<span class="tag type3 center">
+						¥<span class="number fs_14" id="insurance">{$delivery['insurance']}<input
+							type="hidden" name="insurance" value="{$delivery.insurance}"></span>
+					</span>
+				</p>
+				</notempty>
+				<p>
+					<span class="tag type2 right">合计（含运费，服务费）：</span>
+					<span class="tag type3">
+						<span class="currency fs_14">¥</span>
+						<!-- 必须要有itemtotalfield才能使总价实时更新有效 -->
+						<span class="number red fs_18" itemtotalfield="true">0.00</span>
+					</span>
+				</p>
+				<p>
+					<span class="tag type2 right">实付款：</span>
+					<span class="tag type3">
+						<span class="currency">¥</span>
+						<span class="number red fs_18" itemtotalfield="true">0.00</span>
+					</span> 
+				</p>
+			</div>
+			<input type="submit" value="提交订单" class="submit ff_yh fs_18" />
+			<a href="cart.html" class="back_to_cart">返回购物车</a>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+			<p class="bottom_tip fs_12">若价格变动，请在提交订单后联系卖家改价，并查看已买到的宝贝</p>
+		</form>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<script type="text/javascript">
+		function selectorder() {
+			if ($(".entry input:checkbox:checked").length==0){
+			    layer.msg("选择你要提交的订单",{icon:5,time:2000});
+				return false;
+			}
+        }
+	</script>
+</body>
+</html>

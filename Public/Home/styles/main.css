@@ -1,0 +1,34 @@
+/* 初始化样式 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	border-width: 0;
+}
+
+input, textarea, select {
+	border-width: 0;
+	outline-width: 0;
+}
+
+/* 全页背景 */
+body {
+	background-image: url('../images/bg/bg.jpg');
+}
+
+/* 头部内容区和底部 */
+#header, #content, #footer {
+	
+	
+	
+}

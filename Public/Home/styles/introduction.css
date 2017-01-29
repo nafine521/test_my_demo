@@ -1,0 +1,56 @@
+/* 内容区#content */
+#content.type1 {
+	width: 909px;
+	margin: 0 auto;
+	
+}
+
+/** 内容主体.main_text **/
+#content .main .main_text {
+	width: 631px;
+}
+
+#content .main .main_text .intro {
+	margin-top: 19px;
+	border-radius: 11px;
+	background: url('../images/bg/intro_dashline.png') #c1edf4 repeat-y center center;
+}
+
+#content .main .main_text .intro span {
+	display: block;
+	height: 31px;
+	border-radius: 11px;
+}
+
+#content .main .main_text .intro span.border_top {
+	background: url('../images/bg/intro_dashline_top.png') #c1edf4 no-repeat center bottom;
+}
+
+#content .main .main_text .intro span.border_bottom {
+	background: url('../images/bg/intro_dashline_bottom.png') #c1edf4 no-repeat center top;
+}
+
+#content .main .main_text .intro .intro_text {
+	line-height: 36px;
+	padding: 0 36px 0 55px;
+}
+
+#content .main .main_text .intro .intro_text p {
+	text-indent: 2em;
+}
+
+#content .main .main_text .intro .intro_text img {
+	float: right;
+	margin: 8px 0 5px 0;
+}
+
+#content .main .main_text .intro .intro_text .more {
+	float: right;
+	margin: 40px 26px 12px 0;
+	text-align: right;
+	color: #000;
+}
+
+#content .main .main_text .intro .intro_text .more:hover {
+	text-decoration: underline;
+}

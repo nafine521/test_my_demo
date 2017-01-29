@@ -1,0 +1,23 @@
+/*分页样式*/
+#page div{
+	text-align: right;
+}
+#page div a,#page div span{
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: #666;
+    height: 26px;
+    line-height: 26px;
+    text-decoration: none;
+    margin: 0 0 6px 6px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+#page div a:hover,#page div .current {
+    background: #5a98de;
+    color: #fff;
+}

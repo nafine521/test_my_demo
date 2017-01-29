@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>产品中心详情页</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/product_detail.css" />
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_slideshow.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_number.js"></script>
+</head>
+<body>
+
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<include file="Public/subnav" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+			<div class="main_text ff_simsun fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="{:U('Index/index')}">首页</a>
+					&gt;&gt;
+					<a href="{:U('Product/product')}">产品中心</a>
+					&gt;&gt;
+					<a href="javascript:;" class="current">{$info.name}</a>
+				</p>
+				<form action="{:U('Member/getOrder')}" method="post" class="detail" id="form-shopping">
+					<span class="border_top"></span>
+					<div class="detail_text">
+						<div class="slideshow">
+							<div class="wrapper">
+								<ul class="image plain">
+									<li>
+										<img src="__ROOT__{$info.img}"/>
+									</li>
+									<notempty name="pro_photo">
+									<li>
+										<img src="__ROOT__{$pro_photo.img}" />
+									</li>
+									</notempty>
+								</ul>
+							</div>
+							<ul class="nav">
+								<li class="prev"></li>
+								<li class="next"></li>
+							</ul>
+						</div>
+						<p class="name ff_yh fs_14">{$info.name}</p>
+						<notempty name="info['promo_pri']">
+						<p class="tags">限时特价销售 保证正品 支持鉴定</p>
+						</notempty>
+
+						<p class="price">
+							价格
+							<span class="ff_yh">￥{$info.official_price}</span>
+						</p>
+						<p class="purchase_text">
+							配送
+							<span class="customize_select">
+								<select>
+									<option>{$delivery.area}</option>
+								</select>
+							</span>
+							快递：<empty name="delivery.fee">免运费<else/>{$delivery.fee}元</empty>
+						</p>
+						<div class="purchase_text">
+							数量：
+							<span class="num_box">
+								<ul class="buttons">
+									<li class="minus"></li>
+									<li class="add"></li>
+								</ul>
+								<input type="number" name="quantity" value="1"/>
+							</span>
+							<input type="hidden" name="pro_id" value="{$info.id}">
+						</div>
+						<input type="submit" value="立即购买" class="buy button ff_fz fs_20" />
+						<input type="button" value="加入购物车" class="add_to_cart button ff_fz fs_20" id="add_to_cart"/>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</div>
+					<span class="border_bottom"></span>
+				</form>
+				<p class="description">{$info.description|htmlspecialchars_decode}</p>
+				<h1 class="recommend headline type1 ff_yh fs_18">
+					<span>产品推荐</span>
+				</h1>
+				<ul class="recommend_list plain">
+					<volist name="promo_list" id="v">
+					<li>
+						<img src="__ROOT__{$v.img}" />
+						<p class="bubble_top"></p>
+						<a href="{:U('Product/product_detail',array('id'=>$v['id']))}" class="text">{$v.name}</a>
+					</li>
+		</volist>
+				</ul>
+
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+
+
+	<script type="text/javascript">
+		/*加入购物车*/
+		$("#add_to_cart").click(function() {
+			var quantity=$("input[name='quantity']").val();
+			var pro_id="{$info.id}";
+			$.post("{:U('product_detail')}",{"quantity":quantity,"pro_id":pro_id},function(res){
+				if(res.status=="y")layer.msg(res.info,{icon:1,time:1500});
+				else layer.msg(res.info,{icon:3,time:1500});
+			});
+		});
+
+
+	</script>
+</body>
+</html>

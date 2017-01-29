@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>购物车</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/cart.css" />
+
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_sidebar_toggle.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_select_all.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_delete_item.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_item_calculator.js"></script>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<ul class="sidebar type2 ff_yh fs_14">
+				<li class="banner ff_fz">
+					<p class="cn">会员中心</p>
+					<p class="en fs_14">Member Center</p>
+				</li>
+				<volist name="memberNav" id="item">
+				<li class="entry">
+					<p class="header order">{$item.name}</p>
+					<ul class="sub_entry">
+						<if condition="$item['children']">
+						<volist name="item['children']" id="v">
+						<li><a href="{:U($v['link'])}">{$v.name}</a></li>
+
+						</volist>
+							<else/>
+							<p class="header trade"><a href="{:U($item['link'])}">交易管理</a></p>
+						</if>
+
+					</ul>
+				</li>
+				</volist>
+
+
+				<if condition="$promo_pro">
+					<li class="buy" style="background:url('__ROOT__{$promo_pro.img}') no-repeat center center;"><a href="{:U('Product/product',array('id'=>$promo_pro['id']))}" title="热卖产品"><img src="__PUBLIC__images/bg/sidebar_buy.png" title="点击购买" id="buyHot"></a></li>
+				</if>
+			</ul>
+			<div class="main_text ff_yh fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="{:U('member')}">会员中心</a>
+					&gt;&gt;
+					<a href="javascript:;" class="current">我的购物车</a>
+				</p>
+				<form action="#" method="post" class="info_card">
+					<img src="__PUBLIC__images/icons/login_avatar.jpg" class="img" />
+					<p class="username ff_fz fs_18">
+						用户名：
+						<span class="ff_yh">{$Think.session.tp1611_user.username}</span>
+					</p>
+					<p class="text"><!--你目的是向：注册会员，积分：223分。--></p>
+					<p class="search">
+						<input type="text" class="input_box" placeholder="输入订单号或商品进行搜索" />
+						<input type="image" src="__PUBLIC__images/icons/search.gif" class="search_button" />
+					</p>
+				</form>
+				<h1 class="headline type2 fs_18">我的购物车</h1>
+				<form action="{:U('confirm_order')}" method="post" onsubmit="return select()">
+					<ul class="item_list">
+						<li class="item header fs_14">
+							<span class="float name">商品名称</span>
+							<span class="float price">单价（元）</span>
+							<span class="float amount">数量</span>
+							<span class="float total">金额</span>
+							<span class="float actions">交易操作</span>
+							<!-- 清除浮动样式 -->
+							<div class="clear"></div>
+						</li>
+						<empty name="cart_list">
+							<li>暂无数据，继续逛逛吧
+								<!--<a href="#">移至收藏夹</a>-->
+							</li>
+							<else/>
+						<li class="action">
+							<!-- 全选按钮必须给定一个groupid -->
+							<!-- 响应此全选按钮的复选框必须有和此groupid相同的selectid -->
+							<input type="checkbox" groupid="g1" id="calculator"/>
+							<span class="fs_14">全选</span>
+							<a href="javascript:;" class="delete_selected">删除</a>
+							<!--<a href="#">移至收藏夹</a>-->
+						</li>
+						</empty>
+						<volist name="cart_list" id="v">
+						<li class="entry">
+							<p class="item header fs_14">
+								<input type="checkbox" selectid="g1" name="order_id[{$v.order_id}]" value="{$v.order_id}" class="order"/>
+								{$v.order_date}
+								<span class="fs_12">订单号： {$v.order_sn}</span>
+								<a href="javascript:;" class="delete_this"></a>
+							</p>
+							<div class="item float name ff_simsun">
+								<a href="{:U('Product/product_detail',array('id'=>$v['pro_id']))}" title="点击可查看详情"> <img src="__ROOT__{$v.img}" /></a>
+								<p class="title">{$v.name|cutStr=10}</p>
+								<p class="category">品种分类：{$v.cat_name}</p>
+							</div>
+							<p class="float price"><php>
+								if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price'];}else{echo $v['official_price'];}
+							</php></p>
+
+								<div class="purchase_text float amount fs_14">
+
+									<span class="num_box">
+									<ul class="buttons">
+										<li class="minus"></li>
+										<li class="add"></li>
+									</ul>
+									<input type="number" name="s_num" value="{$v.s_num}"/>
+
+									</span>
+									&nbsp;
+								</div>
+
+							<p class="float total"><php>
+								if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price']*$v['s_num'];}else{echo $v['official_price']*$v['s_num'];}
+							</php>.00</p>
+							<p class="float actions">
+								<a href="javascript:;" class="delete_this">删除</a>
+								<a href="javascript:;" class="collect" dataid="{$v['id']}">移至收藏夹</a>
+							</p>
+							<!-- 清除浮动样式 -->
+							<div class="clear"></div>
+							<input type="hidden" id="order_id" value="{$v.order_id}"/>
+						</li>
+						</volist>
+
+
+					</ul>
+					<div class="checkout_box ff_yh">
+						<!-- 必须要有itemnumberfield才能使数量实时更新有效 -->
+						<!-- 必须要有itemtotalfield才能使总价实时更新有效 -->
+						<!-- 这两个自定义属性值随意 -->
+						<p class="text fs_12">
+							已选
+							<span class="number" itemnumberfield="true">0</span>
+							件商品
+						</p>
+						<p class="text fs_14">
+							合计（不含运费）￥
+							<span class="number fs_18" itemtotalfield="true">0.00</span>
+						</p>
+						<input type="submit" value="结算" class="checkout ff_yh" />
+
+					</div>
+				</form>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_number.js"></script>
+	<script type="text/javascript">
+		var delUrl="{:U('Member/cartDel')}";
+
+		function select() {
+			if($(".order:checked").length==0){
+			    layer.msg("未选择订单！",{icon:3,time:2000});
+			    return false;
+			}
+        }
+
+
+
+        /*点击修改数量*/
+        $(".num_box .buttons .add").click(function () {
+			var new_num=parseInt($(this).parent().siblings("input").val())+1;
+            changeNum(new_num);
+        });
+        $(".num_box .buttons .minus").click(function () {
+            var new_num=parseInt($(this).parent().siblings("input").val())-1;
+            changeNum(new_num);
+        });
+        /*直接修改数值*/
+        $("input[type='number']").blur(function () {
+            changeNum($(this).val());
+        });
+		/*ajax返回函数*/
+		function changeNum(new_num) {
+            var order_id=$("#order_id").val();
+            $.post("{:U('cart')}",{"s_num":new_num,"order_id":order_id},function (res) {
+                if (res.status=="y"){
+                    layer.msg(res.info,{icon:1,time:1200});
+                }
+            })
+
+        }
+
+        /*移入收藏夹*/
+        $(".collect").click(function () {
+            var id=$(this).attr("dataid");
+            var _this=$(this)
+            $.post("{:U('Public/status')}",{"tableName":"cart","primary":"id","id":id,"fieldVal":2,"fieldName":"status"},function (res) {
+                if(res.status=="y"){
+                    layer.msg("成功加入收藏夹",{icon:1,time:1000});
+                    _this.parents("li").remove();
+                }else{
+                    layer.msg("加入收藏夹失败",{icon:2,time:1000});
+                }
+            })
+        })
+	</script>
+</body>
+</html>

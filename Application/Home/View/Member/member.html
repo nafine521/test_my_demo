@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>会员中心</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/member.css" />
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_sidebar_toggle.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/page_member.js"></script>
+</head>
+
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<ul class="sidebar type2 ff_yh fs_14">
+				<li class="banner ff_fz">
+					<p class="cn">会员中心</p>
+					<p class="en fs_14">Member Center</p>
+				</li>
+				<volist name="memberNav" id="item">
+					<li class="entry">
+						<p class="header order">{$item.name}</p>
+						<ul class="sub_entry">
+							<if condition="$item['children']">
+								<volist name="item['children']" id="v">
+									<li><a href="{:U($v['link'])}">{$v.name}</a></li>
+
+								</volist>
+								<else/>
+								<p class="header trade"><a href="{:U($item['link'])}">交易管理</a></p>
+							</if>
+
+						</ul>
+					</li>
+				</volist>
+
+
+				<if condition="$promo_pro">
+					<li class="buy" style="background:url('__ROOT__{$promo_pro.img}') no-repeat center center;"><a href="{:U('Product/product',array('id'=>$promo_pro['id']))}" title="热卖产品"><img src="__PUBLIC__images/bg/sidebar_buy.png" title="点击购买" id="buyHot"></a></li>
+				</if>
+			</ul>
+			<div class="main_text ff_simsun fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="javascript:;" class="current">会员中心</a>
+				</p>
+				<h1 class="headline type2 ff_yh fs_18">会员中心</h1>
+				<h2 class="headline type3 user ff_fz fs_14">个人资料</h2>
+				<div class="info_box">
+					<input type="hidden"  id="picurl" name="img" value="{$user_info['img']}"/>
+                	<input type="hidden" name="oldpic" value="{$user_info['img']}" >
+                	<input type="hidden" name="id" value="{$Think.session.tp1611_user.id}" >
+
+                	<span class="btn btn-success" id="image"  style="cursor: pointer;"><img id="thumb_url" src='<if condition="$user_info['img']">__ROOT__{$user_info['img']}<else/>__PUBLIC__images/icons/login_avatar.jpg</if>' class="img" alt="选择图片" title="点击更换头像" ></span>
+					<p class="info username ff_fz fs_18">
+						用户名：
+						<span class="ff_yh">{$Think.session.tp1611_user.username}</span>
+					</p>
+					<a href="member_info.html" class="action">完善个人资料</a>
+					<p class="info level ff_yh fs_12">
+						会员等级：<span>SVIP{$user_info.membership}</span>
+					</p>
+					<a href="member_info.html" class="action">管理收货地址</a>
+					<a href="purchase_record.html" class="info view_record">查看购物记录</a>
+					<a href="change_password.html" class="action">修改密码</a>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+					<a href="javascript:;" class="change_avatar">保存头像</a>
+					<if condition="$finish">
+						<p class="messages">
+							您的信息不完整！[<a href="{:U('member_info')}">请填写资料</a>]<a href="#" class="hide_this">隐藏显示</a>
+						</p>
+					</if>
+					<!-- 清除浮动样式 -->
+					<div class="clear"></div>
+				</div>
+				<ul class="list_box">
+					<li class="headline type3 ff_fz fs_14">我的动态</li>
+					<foreach name="RecentViews" item="v" key="k">
+					<li class="entry">
+						<a href="{:U('Product/product_detail',array('id'=>$k))}">{$k|getNameById="product",###}</a>
+						<span class="date">{$v|date="Y-m-d",###}</span>
+						<span class="time">{$v|date="H:i",###}</span>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</li>
+					</foreach>
+					<li class="more">
+						<empty name="RecentViews">你还没逛过本站</empty>
+						<a href="{:U('Product/product')}">&gt;&gt;随便看看...</a>
+					</li>
+				</ul>
+
+
+				<h2 class="headline type3 ff_fz fs_14">我的收藏</h2>
+				<div class="slideshow">
+					<div class="wrapper">
+					<ul class="favorite_list plain image">
+
+						<volist name="cart_list" id="v">
+						<li>
+							<img src="__ROOT__{$v['img']}" />
+							<a href="{:U('Product/product_detail',array('id'=>$v['id']))}" class="name">{$v['name']|cutStr=10}</a>
+							<p class="price">
+								￥<php>
+								if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price'];}else{echo $v['official_price'];}
+							</php>
+								<a href="javascript:collectBuy({$v['order_id']});">购买&gt;&gt;</a>
+							</p>
+						</li>
+						</volist>
+
+					</ul>
+					</div>
+						<ul class="nav">
+						<li class="prev"></li>
+						<li class="next"></li>
+						</ul>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+
+				</div>
+				</div>
+
+
+
+
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+
+	<!-- 新增编辑器引入文件 -->
+<link rel="stylesheet" href="__ROOT__/Public/Admin/kindeditor/themes/default/default.css" />
+<script src="__ROOT__/Public/Admin/kindeditor/kindeditor-min.js"></script>
+<script src="__ROOT__/Public/Admin/kindeditor/lang/zh_CN.js"></script>
+<script type="text/javascript">
+	/*上传图片*/
+	$(".change_avatar").click(function(){
+		var uploadImg=$("input[name='img']").val();
+		var oldpic=$("input[name='oldpic']").val();
+		var id=$("input[name='id']").val();
+		if (uploadImg==oldpic) {
+			layer.msg("请点击图片上传图片",{icon:2,time:2000});
+			return false;
+		};
+		$.post("{:U('member')}",{"img":uploadImg,"oldpic":oldpic,"id":id},function(res){
+			if (res.status=="y") {
+				$("input[name='oldpic']").val(uploadImg);
+				layer.msg("保存成功",{icon:1,time:2000});
+			}else{
+				layer.msg("保存失败,请尝试重新登录",{icon:2,time:2000});
+			}
+		})
+	});
+	//上传图片
+    KindEditor.ready(function(K) {
+    var editor = K.editor({
+        allowFileManager : true,
+        uploadJson : "{:U('Basic/uploadImg',array('path'=>'user','w'=>150,'h'=>80))}", //上传功能
+        fileManagerJson : '__ROOT__/Public/Admin/kindeditor/php/file_manager_json.php?dirpath=user', //网络空间
+      });
+    //上传背景图片
+    K('#image').click(function() {
+      editor.loadPlugin('image', function() {
+        editor.plugin.imageDialog({
+            showRemote : false, //网络图片不开启
+            //showLocal : false, //不开启本地图片上传
+            imageUrl : K('#picurl').val(),
+            clickFn : function(url, title, width, height, border, align) {
+
+            K('#picurl').val(url);
+            $('#thumb_url').attr("src","__ROOT__"+url);
+            editor.hideDialog();
+          }
+        });
+      });
+    });
+ });
+
+/*收藏列表提交购买事件*/
+function collectBuy(id) {
+//    $url=U("confirm_order");
+	document.write("<form action='{:U("confirm_order")}' method='post' name='form1' style='display:none'>");
+    document.write("<input type='hidden' name='order_id' value='"+id+"'>");
+ 	document.write("</form>");
+    document.form1.submit();
+
+}
+
+</script>
+</body>
+</html>

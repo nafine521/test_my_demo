@@ -1,0 +1,227 @@
+[ 2017-01-24T01:13:21+08:00 ] ::1 /Q2/tp1611/index.php/Home/Member/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0448s ]
+SQL: SHOW COLUMNS FROM `tp_banner` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `tp_banner` WHERE `local` = 1 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0442s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 1 ORDER BY sort  [ RunTime:0.0449s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0471s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191601 AND `promo_off` > 1485191601 ORDER BY pubdate desc LIMIT 1   [ RunTime:0.0459s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0461s ]
+SQL: SELECT * FROM `tp_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0457s ]
+SQL: SHOW COLUMNS FROM `tp_member` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `tp_member`  [ RunTime:0.0495s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0492s ]
+SQL: SELECT * FROM `tp_order` WHERE `user_id` = 4  [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `tp_cart` left join tp_product on tp_cart.pro_id=tp_product.id left join tp_order on tp_order.id=tp_cart.order_id  WHERE `order_id` IN ('15','20','19','18','17','21','22','23') AND `status` = 0 ORDER BY tp_order.order_date desc  [ RunTime:0.0481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+NOTIC: [8] Undefined variable: index_banner E:\demo\Q2\tp1611\Application\Runtime\Cache\Home\25dfd173bc29737ecadc092b5bfa364d.php 第 20 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2017-01-24T01:13:25+08:00 ] ::1 /Q2/tp1611/index.php/Home/Product/product/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0464s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0487s ]
+SQL: SHOW COLUMNS FROM `tp_banner` [ RunTime:0.0483s ]
+SQL: SELECT * FROM `tp_banner` WHERE `local` = 1 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0466s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 1 ORDER BY sort  [ RunTime:0.0478s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0489s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191605 AND `promo_off` > 1485191605 ORDER BY pubdate desc LIMIT 1   [ RunTime:0.0476s ]
+SQL: SELECT tp_product.*,tp_series.cat_id FROM `tp_product` left join tp_series on tp_product.series_id=tp_series.id  WHERE tp_product.is_sale = 1 AND tp_product.is_trash = 0 ORDER BY tp_product.pubdate desc LIMIT 0,4   [ RunTime:0.0461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+NOTIC: [8] Undefined variable: index_banner E:\demo\Q2\tp1611\Application\Runtime\Cache\Home\5b87b1808583e75413168b00f7d913de.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000692s ]
+
+[ 2017-01-24T01:13:28+08:00 ] ::1 /Q2/tp1611/index.php/Home/Product/product_detail/id/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0442s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0473s ]
+SQL: SHOW COLUMNS FROM `tp_banner` [ RunTime:0.0488s ]
+SQL: SELECT * FROM `tp_banner` WHERE `local` = 1 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0453s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 1 ORDER BY sort  [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0473s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191607 AND `promo_off` > 1485191607 ORDER BY pubdate desc LIMIT 1   [ RunTime:0.0523s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0458s ]
+SQL: SHOW COLUMNS FROM `tp_pro_photo` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `tp_pro_photo` WHERE ( pro_id=9 )  [ RunTime:0.0440s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191607 AND `promo_off` > 1485191607 ORDER BY pubdate desc  [ RunTime:0.0459s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000478s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000880s ]
+NOTIC: [8] Undefined variable: index_banner E:\demo\Q2\tp1611\Application\Runtime\Cache\Home\39296edb39ade693c2160c21f7646aeb.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001839s ]
+
+[ 2017-01-24T01:13:30+08:00 ] ::1 /Q2/tp1611/index.php/Home/Member/getOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0445s ]
+SQL: SHOW COLUMNS FROM `tp_banner` [ RunTime:0.0469s ]
+SQL: SELECT * FROM `tp_banner` WHERE `local` = 1 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0456s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 1 ORDER BY sort  [ RunTime:0.0446s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0464s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191609 AND `promo_off` > 1485191609 ORDER BY pubdate desc LIMIT 1   [ RunTime:0.0459s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0473s ]
+SQL: SELECT * FROM `tp_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0544s ]
+SQL: SHOW COLUMNS FROM `tp_member` [ RunTime:0.0636s ]
+SQL: SELECT * FROM `tp_member`  [ RunTime:0.0454s ]
+SQL: SELECT * FROM `tp_product` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0452s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0476s ]
+SQL: SHOW COLUMNS FROM `tp_series` [ RunTime:0.0472s ]
+SQL: SELECT tp_category.name FROM `tp_series` left join tp_category on tp_series.cat_id=tp_category.id  WHERE ( tp_series.id=3 ) LIMIT 1   [ RunTime:0.0488s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_order` LIMIT 1   [ RunTime:0.0444s ]
+SQL: INSERT INTO `tp_order` (`user_id`,`original_price`,`cat_name`,`order_sn`,`order_date`) VALUES ('4','321.00','亲肤','201701240189714','1485191610') [ RunTime:0.0700s ]
+SQL: INSERT INTO `tp_cart` (`pro_id`,`order_id`,`s_num`) VALUES ('9','24','1') [ RunTime:0.0453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2017-01-24T01:13:31+08:00 ] ::1 /Q2/tp1611/index.php/Home/Member/confirm_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0487s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0763s ]
+SQL: SHOW COLUMNS FROM `tp_banner` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `tp_banner` WHERE `local` = 1 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0465s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 1 ORDER BY sort  [ RunTime:0.0467s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0488s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191611 AND `promo_off` > 1485191611 ORDER BY pubdate desc LIMIT 1   [ RunTime:0.0487s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0468s ]
+SQL: SELECT * FROM `tp_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `tp_member` [ RunTime:0.0495s ]
+SQL: SELECT * FROM `tp_member`  [ RunTime:0.0455s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\demo\Q2\tp1611\Application\Home\Controller\MemberController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0474s ]
+SQL: SELECT * FROM `tp_cart` left join tp_product on tp_cart.pro_id=tp_product.id left join tp_order on tp_order.id=tp_cart.order_id  WHERE tp_cart.order_id IN ('24') ORDER BY tp_order.order_date desc  [ RunTime:0.0486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000502s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8] Undefined variable: index_banner E:\demo\Q2\tp1611\Application\Runtime\Cache\Home\d0b1e274f8c9ab409161f7ef518900d9.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001992s ]
+
+[ 2017-01-24T01:13:41+08:00 ] ::1 /Q2/tp1611/index.php/Home/Member/confirm_address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0462s ]
+SQL: SHOW COLUMNS FROM `tp_banner` [ RunTime:0.0496s ]
+SQL: SELECT * FROM `tp_banner` WHERE `local` = 1 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0483s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 1 ORDER BY sort  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191620 AND `promo_off` > 1485191620 ORDER BY pubdate desc LIMIT 1   [ RunTime:0.0484s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0488s ]
+SQL: SELECT * FROM `tp_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `tp_member` [ RunTime:0.0475s ]
+SQL: SELECT * FROM `tp_member`  [ RunTime:0.0481s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\demo\Q2\tp1611\Application\Home\Controller\MemberController.class.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\demo\Q2\tp1611\Application\Home\Controller\MemberController.class.php 第 150 行.
+NOTIC: [2] Invalid argument supplied for foreach() E:\demo\Q2\tp1611\Application\Home\Controller\MemberController.class.php 第 150 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0471s ]
+SQL: SELECT * FROM `tp_cart` left join tp_product on tp_cart.pro_id=tp_product.id left join tp_order on tp_order.id=tp_cart.order_id  WHERE tp_cart.order_id IN ('24') ORDER BY tp_order.order_date desc  [ RunTime:0.0481s ]
+SQL: SHOW COLUMNS FROM `tp_address` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `tp_address` WHERE `uid` = 4 ORDER BY id desc  [ RunTime:0.0461s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\demo\Q2\tp1611\Application\Home\Controller\MemberController.class.php 第 178 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000534s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000943s ]
+NOTIC: [8] Undefined variable: index_banner E:\demo\Q2\tp1611\Application\Runtime\Cache\Home\d2480ffb7888ee57729b6cb19edea495.php 第 17 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2017-01-24T01:13:45+08:00 ] ::1 /Q2/tp1611/index.php/Home/Member/trans_order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0455s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `tp_banner` [ RunTime:0.0446s ]
+SQL: SELECT * FROM `tp_banner` WHERE `local` = 1 AND `is_show` = 1 LIMIT 1   [ RunTime:0.0569s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 1 ORDER BY sort  [ RunTime:0.0445s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `tp_product` WHERE `promo_price` > 0 AND `promo_on` < 1485191624 AND `promo_off` > 1485191624 ORDER BY pubdate desc LIMIT 1   [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0477s ]
+SQL: SELECT * FROM `tp_user` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `tp_member` [ RunTime:0.0448s ]
+SQL: SELECT * FROM `tp_member`  [ RunTime:0.0438s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0458s ]
+SQL: SELECT * FROM `tp_cart` left join tp_product on tp_cart.pro_id=tp_product.id left join tp_order on tp_order.id=tp_cart.order_id  WHERE tp_cart.order_id IN ('24')  [ RunTime:0.0459s ]
+NOTIC: [8] Undefined index: address_id E:\demo\Q2\tp1611\Application\Home\Controller\MemberController.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `tp_trans_order` [ RunTime:0.0452s ]
+SQL: INSERT INTO `tp_trans_order` (`trans_price`,`uid`,`pro_id`,`order_id`) VALUES ('343','4','9','24') [ RunTime:0.0503s ]
+SQL: UPDATE `tp_cart` SET `status`='1' WHERE `order_id` IN ('24') [ RunTime:0.0593s ]
+

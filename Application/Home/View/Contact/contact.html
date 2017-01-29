@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>联系我们</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/contact.css" />
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Admin/css/H-ui.css" />
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/page_contact.js"></script>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<include file="Public/subnav" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+			<form action="" method="post" class="main_text ff_yh fs_14" id="form-content">
+				<p class="current_location ff_fz">
+					当前位置：
+					<a href="{:U('Index/index')}">首页</a>
+					&gt;&gt;
+					<a href="javascript:;" class="current">联系我们</a>
+				</p>
+				<span class="tag">姓　　名：</span>
+				<input type="text" class="input text" name="name"   datatype="*" nullmsg="姓名不能为空"/>
+				<notempty name="_SESSION['tp1611_user']">
+					<input type="hidden" name="uid" value="{$Think.session.tp1611_user.id}">
+				</notempty>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">联系电话：</span>
+				<input type="tel" class="input text" name="tel"   datatype="*" nullmsg="电话不能为空"/>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag">电子邮箱：</span>
+				<input type="email" class="input text" name="email"   datatype="*" nullmsg="邮箱不能为空"/>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag" >留言内容：</span>
+				<textarea class="input textarea" name="contents"   datatype="*" nullmsg="内容不能为空"></textarea>
+				<!-- 清除浮动样式 -->
+				<div class="clear"></div>
+				<span class="tag" >&nbsp;</span>
+				<input type="text" class="input verify" placeholder="请输入验证码" name="verify"  datatype="*" nullmsg="账户名不能为空"/>
+				<img src="{:U('Index/verify')}" class="box"  id="verifySrc" onclick="verify()" style="cursor: pointer;"/>
+				<input type="submit" value="提交" class="submit block_button ff_fz fs_12" style="float:right"/>
+				<div class="clear"></div>
+				<p class="description">
+					{$basic.name}<br />
+					联系地址：{$contact.add}<br />
+					邮政编码：{$contact.postal}<br />
+					全国免费热线:{$contact.hotline}<br />
+					电话：{$contact.tel}<br />
+					传真：{$contact.fax}<br />
+					邮箱：{$contact.email}<br />
+					官网：{$contact.url}
+				</p>
+				<div id="map"></div>
+			</form>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<script type="text/javascript" src="__ROOT__/Public/Admin/lib/Validform/5.3.2/Validform.min.js"></script>
+	<script type="text/javascript" >
+		// 切换验证码图片
+	function verify () {
+		$("#verifySrc").attr("src",$("#verifySrc").attr("src")+"?"+Math.random());
+	}
+	// 留言ajax
+	  $("#form-content").Validform({
+	      tiptype:2,
+	      ajaxPost:true,
+	      callback:function(form){
+	            if(form.status=='y'){
+	                setTimeout(function () {
+	                    $.Hidemsg();
+	                    location.href="{:U('contact')}";//刷新窗口
+	                },1000);
+	            }
+	        }
+	  });
+	</script>
+</body>
+</html>

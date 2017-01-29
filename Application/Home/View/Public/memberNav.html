@@ -1,0 +1,27 @@
+<ul class="sidebar type2 ff_yh fs_14">
+    <li class="banner ff_fz">
+        <p class="cn">会员中心</p>
+        <p class="en fs_14">Member Center</p>
+    </li>
+    <volist name="memberNav" id="item">
+        <li class="entry">
+            <p class="header order">{$item.name}</p>
+            <ul class="sub_entry">
+                <if condition="$item['children']">
+                    <volist name="item['children']" id="v">
+                        <li><a href="{:U($v['link'])}">{$v.name}</a></li>
+
+                    </volist>
+                    <else/>
+                    <p class="header trade"><a href="{:U($item['link'])}">交易管理</a></p>
+                </if>
+
+            </ul>
+        </li>
+    </volist>
+
+
+    <if condition="$promo_pro">
+        <li class="buy" style="background:url('__ROOT__{$promo_pro.img}') no-repeat 100%;"><a href="{:U('Product/product',array('id'=>$promo_pro['id']))}" title="热卖产品"></a></li>
+    </if>
+</ul>

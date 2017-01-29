@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>购买记录页</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/main.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/header.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/footer.css" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__styles/purchase_record.css" />
+	<script type="text/javascript" src="__PUBLIC__scripts/jquery_1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_scrollbar.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_sidebar_toggle.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_select_all.js"></script>
+	<script type="text/javascript" src="__PUBLIC__scripts/mod_delete_item.js"></script>
+</head>
+<body>
+	<include file="Public/header" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<!-- __主体#content -->
+	<div id="content" class="type1">
+		<div class="main">
+			<ul class="sidebar type2 ff_yh fs_14">
+				<li class="banner ff_fz">
+					<p class="cn">会员中心</p>
+					<p class="en fs_14">Member Center</p>
+				</li>
+				<volist name="memberNav" id="item">
+					<li class="entry">
+						<p class="header order">{$item.name}</p>
+						<ul class="sub_entry">
+							<if condition="$item['children']">
+								<volist name="item['children']" id="v">
+									<li><a href="{:U($v['link'])}">{$v.name}</a></li>
+
+								</volist>
+								<else/>
+								<p class="header trade"><a href="{:U($item['link'])}">交易管理</a></p>
+							</if>
+
+						</ul>
+					</li>
+				</volist>
+
+
+				<if condition="$promo_pro">
+					<li class="buy" style="background:url('__ROOT__{$promo_pro.img}') no-repeat center center;"><a href="{:U('Product/product',array('id'=>$promo_pro['id']))}" title="热卖产品"><img src="__PUBLIC__images/bg/sidebar_buy.png" title="点击购买" id="buyHot"></a></li>
+				</if>
+			</ul>
+			<div class="main_text ff_yh fs_12">
+				<p class="current_location ff_fz fs_14">
+					当前位置：
+					<a href="{:U('member')}">会员中心</a>
+					&gt;&gt;
+					<a href="javascript:;" class="current">购买记录</a>
+				</p>
+				<h1 class="headline type2 fs_18">我购买的</h1>
+				<ul class="item_list">
+					<li class="item header fs_14">
+						<span class="float name">商品名称</span>
+						<span class="float price">单价（元）</span>
+						<span class="float amount">数量&nbsp;</span>
+						<span class="float total">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交易状态&nbsp;</span>
+						<span class="float actions">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交易操作</span>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</li>
+					<li class="action">
+						<input type="checkbox" groupid="g1" />
+						<span class="fs_14">全选</span>
+						<a href="#" class="delete_selected">删除</a>
+					</li>
+
+					<volist name="cart_list" id="v">
+					<li class="entry">
+						<p class="item header fs_14">
+							<input type="checkbox" selectid="g1" name="pruchase" value="{$v.order_id}"/>
+							{$v.order_date|date="Y-m-d  h:i:s",###}
+							<span class="fs_12">订单号： {$v.order_sn}</span>
+							<a href="javascript:;" class="delete_this"></a>
+						</p>
+						<div class="item float name ff_simsun">
+							<img src="__PUBLIC__images/imgs/cart_product_img.jpg" />
+							<p class="title">{$v.name|cutStr=11}</p>
+							<p class="category">品种分类：{$v.cat_name}</p>
+						</div>
+						<p class="float price"><php>
+							if($v['promo_price']>0 && $v['promo_on']< time() && $v['promo_off']>time()){echo $v['promo_price'];}else{echo $v['official_price'];}
+						</php></p>
+						<p class="float amount fs_14">{$v.s_num}</p>
+						<p class="float status">
+							<span>&nbsp;</span>
+							<if condition="$v['status'] eq 1">
+
+							<span>交易成功</span>
+								<else/>
+
+								<span>未成功</span>
+							</if>
+						</p>
+						<p class="float actions">
+
+							<a href="{:U('Product/product_detail',array('id'=>$v['pro_id']))}">再次购买</a>
+						</p>
+						<!-- 清除浮动样式 -->
+						<div class="clear"></div>
+					</li>
+					</volist>
+				</ul>
+				<div class="page_nav ff_simsun">
+					{$page}
+				</div>
+			</div>
+			<!-- 清除浮动样式 -->
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!-- //主体#content -->
+	<!-- __底部#footer -->
+	<include file="Public/footer" title="ThinkPHP框架" keywords="开源WEB开发框架" />
+	<script type="text/javascript">
+		//ajax删除
+		$(".delete_selected").click(function () {
+			var choosed=$("input[name='pruchase']");
+			var str="";
+			$(choosed).each(function (e) {
+				strId+=$(this).val()+","
+            })
+			if(strId==""){
+			    layer.msg("未选择数据",{icon:2,time:1000});
+			    return false;
+			}
+			$.post("{:U('Public/comDel')}",{"tableName":"order","id":strId},function (res) {
+				if (res.status=="y"){
+				    laye.msg("删除成功",{icon:1,time:1000});
+				    location.reload();
+				}
+            })
+        })
+var delUrl="{:U('Public/comDel')}";
+		/*$(".delete_this").click(function (res) {
+			var id=$(this).siblings("input").val();
+            $.post("{:U('Public/comDel')}",{"tableName":"order","id":strId},function (res) {
+                if (res.status=="y"){
+                    laye.msg("删除成功",{icon:1,time:1000});
+                    location.reload();
+                }
+            })
+        })*/
+	</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* 头部#header */
+#header .logo {
+	float: left;
+	height: 50px;
+}
+
+#header .logo img {
+	height: 50px;
+}
+
+#header .link a {
+	color: #000;
+}
+
+#header .link a.current,
+#header .link a:hover {
+	color: #692687;
+}
+
+/* 头部样式1（适用于登陆注册页面） */
+#header.type1 {
+	width: 100%;
+	height: 50px;
+
+	background-color: #fff;
+}
+
+#header.type1 .link {
+	float: right;
+	height: 50px;
+	line-height: 50px;
+}
+
+/* 头部样式2（适用于主页及其他页面） */
+#header.type2 {
+	width: 100%;
+}
+
+#header.type2 .link {
+	padding-right: 14px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+}
+
+#header.type2 .nav {
+	float: right;
+	height: 43px;
+	margin-top: 7px;
+}
+
+#header.type2 .nav a {
+	display: inline-block;
+	width: 122px;
+	height: 43px;
+	line-height: 43px;
+	margin: 0 7px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background: url('../images/bg/nav_button_dashline.png') 2px 4px;
+}
+
+#header.type2 .nav a.current,
+#header.type2 .nav a:hover {
+	color: #692687;
+}
+
+#header.type2 .nav a.index {
+	background-color: #ef8ca7;
+}
+
+#header.type2 .nav a.introduction {
+	background-color: #7bdec0;
+}
+
+#header.type2 .nav a.product {
+	background-color: #3cd1e7;
+}
+
+#header.type2 .nav a.news {
+	background-color: #7e88c6;
+}
+
+#header.type2 .nav a.contact {
+	background-color: #f8904b;
+}
+
+#header.type2 .search {
+	float: right;
+	height: 26px;
+	padding: 10px 0 7px 22px;
+}
+
+#header.type2 .search input {
+	float: left;
+}
+
+#header.type2 .search .input_box {
+	width: 165px;
+
+	line-height: 14px;
+	padding: 5px;
+	margin-right: 10px;
+	border-top: #e0e0e0 2px outset;
+	border-radius: 5px;
+	background-color: #ededed;
+}
+
+#header.type2 .search .search_button {
+	height: 26px;
+}
+
+/* 头部样式3（适用于首页） */
+#header.type3 {
+	height: 910px;
+	background: url('../images/bg/header_bg_index.png') no-repeat center center;
+}
+
+/* 头部样式4（适用于其他页面） */
+#header.type4 {
+	height: 386px;
+	background: url('../images/bg/header_bg.png') no-repeat center bottom;
+}

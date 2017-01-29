@@ -1,0 +1,46 @@
+/* 内容区#content */
+#content.type1 {
+	width: 918px;
+	margin: 0 auto;
+	
+}
+
+/** 内容主体.main_text **/
+#content .main .main_text {
+	width: 640px;
+}
+
+#content .main .main_text .news_list li {
+	margin: 18px 0;
+}
+
+#content .main .main_text .news_list li .title {
+	height: 32px;
+	line-height: 32px;
+}
+
+#content .main .main_text .news_list li .title a {
+	float: left;
+	color: #1a1919;
+}
+
+#content .main .main_text .news_list li .title a:hover {
+	color: #6e2e8c;
+}
+
+#content .main .main_text .news_list li .title .date {
+	float: right;
+	line-height: 25px;
+	margin-right: 16px;
+	font-family: Verdana;
+	color: #662285;
+}
+
+#content .main .main_text .news_list li .summary {
+	line-height: 20px;
+	color: #797878;
+}
+
+#content .main .main_text .page_nav {
+	margin-top: 39px;
+}

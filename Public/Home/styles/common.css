@@ -1,0 +1,486 @@
+/* chrome去箭头 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+/* 火狐去上下箭头 */
+input[type="number"]{-moz-appearance:textfield;} 
+/* 添加自定义字体样式 */
+@font-face {
+	font-family: 'FangZheng ShaoEr JianTi';
+	src: url('../font/fzsejt.woff');
+}
+
+/* 定义自定义字体 */
+/** 方正少儿简体 **/
+.ff_fz {
+	font-family: 'FangZheng ShaoEr JianTi';
+}
+
+/** 微软雅黑 **/
+.ff_yh {
+	font-family: '微软雅黑', '\5fae\8f6f\96c5\9ed1', 'Microsoft YaHei';
+}
+
+/** 宋体 **/
+.ff_simsun {
+	font-family: '宋体', '\5b8b\4f53', 'SimSun';
+}
+
+/* 定义字体大小样式 */
+/** 10号字 **/
+.fs_10 {
+	font-size: 10px;
+}
+
+/** 12号字 **/
+.fs_12 {
+	font-size: 12px;
+}
+
+/** 14号字 **/
+.fs_14 {
+	font-size: 14px;
+}
+
+/** 16号字 **/
+.fs_16 {
+	font-size: 16px;
+}
+
+/** 18号字 **/
+.fs_18 {
+	font-size: 18px;
+}
+
+/** 20号字 **/
+.fs_20 {
+	font-size: 20px;
+}
+
+/* 清除浮动样式 */
+.clear {
+	display: block !important;
+	float: none !important;
+	width: 0 !important;
+	height: 0 !important;
+	clear: both;
+}
+
+/*验证码图片给手指*/
+#verifySrc{
+	cursor:pointer;
+}
+
+/* 浮动无序列表样式 */
+ul.plain li {
+	float: left;
+}
+
+ul.plain li.first {
+	margin-left: 0 !important;
+}
+
+ul.plain li.last {
+	margin-right: 0 !important;
+}
+
+/* 内容区样式1（云朵样式） */
+#content.type1 {
+	background: url('../images/bg/content_bg.png') no-repeat center 54px;
+	 padding: 142px 171px 250px;
+}
+
+#content.type1 .main {
+	max-height: 1080px;
+	padding: 5px;
+}
+
+/* 内容区样式2（云朵白板样式样式） */
+#content.type2 {
+	position: relative;
+	width: 1200px;
+	height: 314px;
+	margin: 0 auto;
+	background: url('../images/bg/index_board_bg.png') no-repeat 340px top;
+}
+
+/** 内容区侧边栏通用样式 **/
+.sidebar {
+	float: left;
+}
+
+/** 内容区侧边栏样式1（云朵样式侧边栏） **/
+.sidebar.type1 {
+	width: 237px;
+	margin: 39px 0 0 0;
+}
+
+.sidebar.type1 li {
+	width: 217px;
+	height: 94px;
+	line-height: 94px;
+	margin: 11px 0;
+	padding-right: 20px;
+	text-align: center;
+	background: url('../images/bg/sidebar_cloud_bg.png') no-repeat center center;
+}
+
+.sidebar.type1 li a {
+	color: #000;
+}
+
+.sidebar.type1 li a.current {
+	font-weight: bold;
+	color: #692687;
+}
+
+.sidebar.type1 li a:hover {
+	color: #692687;
+}
+
+.sidebar.type1 li.buy {
+	width: 217px;
+	height: 156px;
+	margin-top: 40px;
+	background: url('../images/bg/sidebar_cloud_buy.png') no-repeat center center;
+}
+
+.sidebar.type1 li.buy a {
+	display: block;
+	width: 217px;
+	height: 156px;
+}
+#buyHot{
+	padding-top: 125px;
+}
+
+/** 内容区侧边栏样式2（用户管理侧边栏） **/
+.sidebar.type2 {
+	width: 237px;
+	margin: 52px 0 0 0;
+}
+
+.sidebar.type2 li.banner,
+.sidebar.type2 li.entry {
+	margin: 0 7px 0 19px;
+}
+
+.sidebar.type2 li.banner {
+	height: 46px;
+	padding: 9px 0 8px 61px;
+	color: #fff;
+	border-bottom: #eeedeb 1px solid;
+	border-radius: 9px 9px 0 0;
+	background: url('../images/icons/lolipop.png') #07d7e4 no-repeat 23px 12px;
+}
+
+.sidebar.type2 li.banner .cn {
+	line-height: 28px;
+	padding-left: 4px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.sidebar.type2 li.banner .en {
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sidebar.type2 li.entry {
+	line-height: 39px;
+	border: #eeedeb 1px solid;
+	border-top: none;
+	background-color: #f7f6f4;
+}
+
+.sidebar.type2 li.entry a {
+	color: #000;
+}
+
+.sidebar.type2 li.entry a.current {
+	color: #692687;
+}
+
+.sidebar.type2 li.entry .header {
+	height: 39px;
+	line-height: 39px;
+	padding-left: 29px;
+	cursor: pointer;
+}
+
+.sidebar.type2 li.entry .header.cart {
+	background: url('../images/icons/cart.gif') no-repeat 9px 14px;
+}
+
+.sidebar.type2 li.entry .header.account {
+	background: url('../images/icons/person.gif') no-repeat 9px 15px;
+}
+
+.sidebar.type2 li.entry .header.order {
+	background: url('../images/icons/book.gif') no-repeat 9px 15px;
+}
+
+.sidebar.type2 li.entry .header.trade {
+	background: url('../images/icons/billstack.gif') no-repeat 7px 19px;
+}
+
+.sidebar.type2 li.entry .header.point {
+	background: url('../images/icons/creditcard.gif') no-repeat 7px 17px;
+}
+
+.sidebar.type2 li.entry .sub_entry {
+	display: none;
+}
+
+.sidebar.type2 li.entry .sub_entry li {
+	padding-left: 29px;
+	border-top: #eeedeb 1px solid;
+	background-color: #fff;
+}
+
+.sidebar.type2 li.buy {
+	width: 237px;
+	height: 156px;
+	margin-top: 41px;
+	background: url('../images/bg/sidebar_cloud_buy.png') no-repeat center center;
+}
+
+.sidebar.type2 li.buy a {
+	display: block;
+	width: 237px;
+	height: 156px;
+	text-align: center;
+}
+
+/** 内容区内容通用样式 **/
+.main_text {
+	float: right;
+}
+
+/* 标题栏样式1 */
+.headline.type1 {
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #1a1919;
+	border-bottom: #dfdfdf 1px solid;
+}
+
+.headline.type1 span {
+	display:inline-block;
+	border-bottom: #692687 1px solid;
+}
+
+/* 标题栏样式2 */
+.headline.type2 {
+	height: 53px;
+	line-height: 53px;
+	padding-left: 34px;
+	font-weight: normal;
+	color: #1c1c1b;
+	border-bottom: #784093 3px solid;
+}
+
+/* 标题栏样式3 */
+.headline.type3 {
+	height: 36px;
+	line-height: 36px;
+	padding-left: 29px;
+	font-weight: normal;
+	color: #010101;
+	border: #efe3dc 1px solid;
+	background-color: #f5ece0;
+}
+
+/* 当前位置样式 */
+.current_location {
+	height: 36px;
+	line-height: 36px;
+	padding-left: 9px;
+	color: #000;
+}
+
+.current_location a {
+	color: #000;
+}
+
+.current_location a.current,
+.current_location a:hover {
+	color: #784093;
+}
+
+/* 页码导航样式 */
+.page_nav {
+	height: 38px;
+	line-height: 38px;
+	text-align: right;
+	font-size:16px;
+}
+
+.page_nav a {
+	display: inline-block;
+	min-width: 12px;
+	height: 38px;
+	margin: 0 5px;
+	text-align: center;
+	color: #000;
+}
+
+.page_nav .current {
+	font-weight: bold;
+	color: #692687;
+	background: url('../images/icons/bottle.png') no-repeat center top;
+}
+
+.page_nav a:hover {
+	text-decoration: underline;
+	color: #692687;
+}
+
+/* 确认页导航样式 */
+.confirm_nav {
+	height: 37px;
+	line-height: 37px;
+	width: 842px;
+}
+
+.confirm_nav li {
+	position: relative;
+	width: 258px;
+	height: 37px;
+	margin-right: 34px;
+	text-align: center;
+	color: #4b4b4a;
+	background-color: #e0dcdc;
+}
+
+.confirm_nav li.current {
+	color: #fdfdf7;
+	background-color: #692587;
+}
+
+.confirm_nav li .left_arrow,
+.confirm_nav li .right_arrow {
+	position: absolute;
+	display: block;
+	top: 0;
+	width: 24px;
+	height: 37px;
+}
+
+.confirm_nav li .left_arrow {
+	left: -24px;
+	background: url('../images/icons/confirm_nav_left_inactive.gif') no-repeat right center;
+}
+
+.confirm_nav li .right_arrow {
+	right: -24px;
+	background: url('../images/icons/confirm_nav_right_inactive.gif') no-repeat left center;
+}
+
+.confirm_nav li.current .left_arrow {
+	background-image: url('../images/icons/confirm_nav_left_active.gif');
+}
+
+.confirm_nav li.current .right_arrow {
+	background-image: url('../images/icons/confirm_nav_right_active.gif');
+}
+
+/* 自定义下拉选框通用样式 */
+.customize_select {
+	display: inline-block;
+	background: transparent;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.customize_select select {
+	height: 100%;
+	border-width: 0;
+	background-color: transparent;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+}
+
+/* 块状按钮样式 */
+.block_button {
+	display: block;
+	line-height: 100%;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* 轮播插件通用样式 */
+.slideshow {
+	position: relative;
+}
+
+.slideshow .image_wrapper {
+	overflow: hidden;
+}
+
+.slideshow .image {
+	position: relative;
+	height: 100%;
+}
+
+.slideshow .image li {
+	height: 100%;
+}
+
+.slideshow .nav {
+	position: absolute;
+}
+
+.slideshow .nav li {
+	height: 100%;
+	cursor: pointer;
+}
+
+.slideshow .nav .prev {
+	float: left;
+}
+
+.slideshow .nav .next {
+	float: right;
+}
+
+/* 数字框通用样式 */
+.num_box {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.num_box input {
+	height: 100%;
+	line-height: 100%;
+	text-align: center;
+}
+
+.num_box .buttons {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.num_box .buttons li {
+	height: 100%;
+	line-height: 100%;
+	cursor: pointer;
+}
+
+.num_box .buttons .minus {
+	float: left;
+}
+
+.num_box .buttons .add {
+	float: right;
+}

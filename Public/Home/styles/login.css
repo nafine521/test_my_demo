@@ -1,0 +1,151 @@
+/* 登陆表单 */
+#form-content {
+	position: relative;
+	width: 363px;
+	top: 100px;
+	left: 30%;
+	padding: 90px 180px 35px 160px;
+	background-color: #fff;
+	margin-bottom: 114px;
+}
+
+#form-content .picture {
+	position: absolute;
+	left: -340px;
+	top: -60px;
+	width: 530px;
+	height: 488px;
+	background: url('../images/bg/register_form_bg.png') no-repeat;
+	z-index: -1;
+}
+
+#form-content .avatar {
+	position: absolute;
+	left: 50%;
+	top: -67px;
+	width: 144px;
+	height: 145px;
+	margin-left: -72px;
+	border: #fff 3px solid;
+}
+
+#form-content .tab_box .tabs {
+	height: 26px;
+	line-height: 26px;
+	margin-bottom: 22px;
+	text-align: center;
+	color: #010101; 
+}
+
+#form-content .tab_box .tabs .tab {
+	display: inline-block;
+	margin: 0 45px;
+	color: #010101;
+}
+
+#form-content .tab_box .tabs .tab.current,
+#form-content .tab_box .tabs .tab.active {
+	color: #6b2888;
+}
+
+#form-content .tab_box .tabs .tab.first {
+	margin-left: 0;
+}
+
+#form-content .tab_box .tabs .tab.last {
+	margin-right: 0;
+}
+
+#form-content .tab_box .tab_content {
+	line-height: 83px;
+}
+
+#form-content .tab_box .tab_content .input {
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 17px 0;
+	padding: 5px;
+	border: #d6d6d6 1px solid;
+	background-color: #fbfbfb;
+}
+
+#form-content .tab_box .tab_content .input.icon {
+	width: 41px;
+	border-right: none;
+}
+
+#form-content .tab_box .tab_content .input.icon.account {
+	background: url('../images/icons/account.gif') no-repeat center center;
+}
+
+#form-content .tab_box .tab_content .input.icon.password {
+	background: url('../images/icons/key.gif') no-repeat center center;
+}
+
+#form-content .tab_box .tab_content .input.arrow {
+	width: 8px;
+	height: 46px;
+	padding: 0;
+	border-style: solid none;
+	background: url('../images/bg/input_arrow_bg.gif') #fbfbfb no-repeat left center;
+}
+
+#form-content .tab_box .tab_content .input.text {
+	width: 292px;
+	border-left: none;
+}
+
+#form-content .remember_login {
+	height: 29px;
+	line-height: 29px;
+	color: #515151;
+}
+
+#form-content .remember_login input {
+	vertical-align: text-bottom;
+}
+
+#form-content .verify {
+	width:100px;
+
+}
+
+#form-content .remember_login .forget_password {
+	display: inline-block;
+	margin-left: 10px;
+	color: #692687;
+}
+
+#form-content .remember_login .forget_password:hover {
+	text-decoration: underline;
+}
+
+#form-content .remember_login .other_login {
+	float: right;
+}
+
+#form-content .remember_login .other_login a {
+	display: inline-block;
+	width: 22px;
+	height: 29px;
+}
+
+#form-content .remember_login .other_login .weibo_login {
+	background: url('../images/icons/weibo.gif') no-repeat center center;
+}
+
+#form-content .remember_login .other_login .qq_login {
+	background: url('../images/icons/qq.gif') no-repeat center center;
+}
+
+#form-content .remember_login .other_login .weixin_login {
+	background: url('../images/icons/weixin.gif') no-repeat center center;
+}
+
+#form-content .submit {
+	width: 363px;
+	height: 48px;
+	margin-top: 10px;
+	background-color: #743c8e;
+}

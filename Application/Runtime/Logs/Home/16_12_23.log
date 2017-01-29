@@ -1,0 +1,17 @@
+[ 2016-12-23T08:31:02+08:00 ] 127.0.0.1 /ff/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007584s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.041863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.042017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020391s ]
+

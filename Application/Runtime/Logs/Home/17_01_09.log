@@ -1,0 +1,2024 @@
+[ 2017-01-09T08:44:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000805s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database '1611tp'
+
+[ 2017-01-09T08:50:55+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0176s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2017-01-09T08:50:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-01-09T08:50:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006876s ]
+
+[ 2017-01-09T08:51:02+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2017-01-09T08:51:02+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2017-01-09T08:52:51+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\1611\1232\tp1611\ThinkPHP\Common\functions.php 第 1261 行.
+
+[ 2017-01-09T08:53:29+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483923209') [ RunTime:0.0004s ]
+
+[ 2017-01-09T08:53:33+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2017-01-09T08:54:20+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010049s ]
+
+[ 2017-01-09T08:57:32+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2017-01-09T09:02:37+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-01-09T09:02:55+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2017-01-09T09:03:46+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2017-01-09T09:03:54+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001033s ]
+
+[ 2017-01-09T09:03:55+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2017-01-09T09:03:55+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2017-01-09T09:03:55+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2017-01-09T09:04:50+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 214 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-01-09T09:05:10+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 214 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001059s ]
+
+[ 2017-01-09T09:05:22+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2017-01-09T09:05:34+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-01-09T09:25:41+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+
+[ 2017-01-09T09:25:56+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2017-01-09T09:27:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2017-01-09T09:30:36+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?67795d0CrxszzGcPmiSqecL0u+OqDKDO1LLbE/1a5v8Z3urp3DA8CCHZvaVW|b575W+/YBt1+PIhrI4FOvwbitt0Mp0REGD8LQ/1m0nZAZA|5a5eQBf1Ns0tLvBXnnVxAsCPG3E3pa260CgAVF+twsdsbg|7efb9M3Jjgkm0FkTKRFhKVhT2rmgfUyO8w2lNJ/T4bwAOKb4QOw97fVYBNwbgVVb/aWyaoK2SQu4HEiz1w|4615hjAcYmu9HGadel0bjg2SCdk7SIC+18neAvUXEo5D|8a42gvKFzCL9Dd8FHkb8NVwy+nEsg6pQE48Pbhy5Xg|497cWJyi3Ou6Edz8UD6Vop9vc5c8kO5VUsMx6A4KrUJjMHDCz/Er
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002993s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001214s ]
+
+[ 2017-01-09T09:41:20+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001600s ]
+
+[ 2017-01-09T09:41:36+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2017-01-09T09:41:36+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010907s ]
+
+[ 2017-01-09T09:41:56+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483926115') [ RunTime:0.0004s ]
+
+[ 2017-01-09T09:41:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2017-01-09T09:42:20+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000884s ]
+
+[ 2017-01-09T10:27:09+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+
+[ 2017-01-09T10:27:32+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: fromname D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 245 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2017-01-09T10:28:28+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004297s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: fromname D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 246 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001387s ]
+
+[ 2017-01-09T10:31:32+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: fromname D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 246 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2017-01-09T10:33:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: fromname D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 246 行.
+
+[ 2017-01-09T10:38:33+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: fromname D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 246 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2017-01-09T10:38:38+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2017-01-09T10:40:48+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001952s ]
+
+[ 2017-01-09T10:40:48+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2017-01-09T10:41:08+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-01-09T10:41:33+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001785s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-01-09T10:42:17+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-01-09T10:44:13+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2017-01-09T10:45:37+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html?0.7160325369436312
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-01-09T10:45:45+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0021s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483929943') [ RunTime:0.0012s ]
+
+[ 2017-01-09T10:45:47+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2017-01-09T10:48:03+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2017-01-09T10:48:03+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-01-09T10:48:19+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483930097') [ RunTime:0.0003s ]
+
+[ 2017-01-09T10:48:22+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012628s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2017-01-09T10:50:28+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002285s ]
+
+[ 2017-01-09T10:50:28+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001257s ]
+
+[ 2017-01-09T10:50:42+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0009s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483930242') [ RunTime:0.0005s ]
+
+[ 2017-01-09T10:50:45+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2017-01-09T10:51:07+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?ff7fzWkuc3bGS29IciBJD7075P8YTOHLP3LgFhrkeVK3YAQl5CDOL6xNx0Lkdb4HePE4GnUrn5ytce52BX68JyZ4vV2glwfSpG90SeeqvjwTbRHA+Edn2qQ|54bc1w2yMGexOgrS83QYPkicwcLzqT7+NkeY1SrltBUN6OlaG4GHFMr8wxL/gmkpcqgLWHHi6ghzakyRyEVtY7mpwj4NmJGwUd9rHsKsuZ0azHtzL5m6Uia3V6WEHeKnktG+7MtdJLz/ZEItDA6d
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = 'd49btjCG/KscShEWz9MhVf2aHhYh2cFrhs0995Sxzkma6fH01nFSei7dKeLS' AND `password` = 'cfdeglvY1fNV_6UIicIYgiV5QQi1CFfsBdxA/XMXIwVMIDidXLwiJyxq5qhgTpdqmw5AbDLxnNciKXUYLQ' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: fromname D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 249 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2017-01-09T10:51:13+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2017-01-09T10:52:55+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?e09fI24UX6o0rtl+j257JkZNzcwI2yQn1+NDne7L/f+sZO2VOK2BWkktfpQd|4ab6OsPqEIv8AHtUGTHXu9hLXhJXF0Y8kQmJrr1/nv8YSg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+
+[ 2017-01-09T11:03:03+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2017-01-09T11:03:03+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2017-01-09T11:03:21+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483931000') [ RunTime:0.0002s ]
+
+[ 2017-01-09T11:03:51+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+
+[ 2017-01-09T11:04:03+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+
+[ 2017-01-09T11:04:13+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001702s ]
+
+[ 2017-01-09T11:04:16+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2017-01-09T11:04:29+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001649s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
+[ 2017-01-09T11:04:40+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2017-01-09T11:04:41+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2017-01-09T11:05:16+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2017-01-09T11:05:16+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2017-01-09T11:05:16+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2017-01-09T11:05:17+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000944s ]
+
+[ 2017-01-09T11:05:17+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2017-01-09T11:05:17+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2017-01-09T11:05:17+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000995s ]
+
+[ 2017-01-09T11:09:19+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2017-01-09T11:09:20+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2017-01-09T11:10:50+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-01-09T11:11:56+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2017-01-09T11:15:37+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2017-01-09T11:16:30+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?8a9b/2OJu3SV9TTcVhD2GV5HihtpZLdLWDyOZHqOPKfIg6C2te7mlj9E6PRF|8b54+CAFEz+YogEHXYv2ZPXHmmmpj+Mbe+G/JGZoM6EhK+ny1IA4dARj8GWLS8zWKfUX7YETCe4poyxhSw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `tp_user` SET `active`='1' WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' [ RunTime:0.0003s ]
+
+[ 2017-01-09T11:16:31+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2017-01-09T11:16:45+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Introduction/introduction.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: navList D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\84aa6862ee27a0339639bd237a713091.php 第 37 行.
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\84aa6862ee27a0339639bd237a713091.php 第 106 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\84aa6862ee27a0339639bd237a713091.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2017-01-09T11:17:53+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2017-01-09T13:14:23+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2017-01-09T13:14:23+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2017-01-09T13:14:31+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/sendCode.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\1611\1232\tp1611\ThinkPHP\Common\functions.php 第 1261 行.
+
+[ 2017-01-09T13:15:01+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html?0.6780537776253726
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2017-01-09T13:15:11+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0007s ]
+
+[ 2017-01-09T13:15:11+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html?0.6780537776253726?0.9204608541520809
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2017-01-09T13:15:24+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483938922') [ RunTime:0.0003s ]
+
+[ 2017-01-09T13:15:27+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-01-09T13:16:07+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010090s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2017-01-09T13:16:07+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-01-09T13:16:23+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483938982') [ RunTime:0.0004s ]
+
+[ 2017-01-09T13:16:26+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2017-01-09T13:16:47+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001355s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+
+[ 2017-01-09T13:16:48+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2017-01-09T13:17:16+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483939035') [ RunTime:0.0004s ]
+
+[ 2017-01-09T13:18:57+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002840s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2017-01-09T13:19:02+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000536s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2017-01-09T13:19:03+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001781s ]
+
+[ 2017-01-09T13:19:23+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0017s ]
+
+[ 2017-01-09T13:19:23+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html?0.06918510056125737
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2017-01-09T13:19:36+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html?0.06918510056125737?0.6559799782288045
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-01-09T13:19:42+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+SQL: INSERT INTO `tp_user` (`email`,`username`,`password`,`register_time`) VALUES ('332656706@qq.com','admin','21232f297a57a5a743894a0e4a801fc3','1483939182') [ RunTime:0.0005s ]
+
+[ 2017-01-09T13:20:12+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003078s ]
+
+[ 2017-01-09T13:20:22+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001650s ]
+
+[ 2017-01-09T13:20:22+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2017-01-09T13:20:40+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0003s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+
+[ 2017-01-09T13:20:57+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2017-01-09T13:20:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2017-01-09T13:20:59+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001187s ]
+
+[ 2017-01-09T13:21:22+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+
+[ 2017-01-09T13:36:34+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001069s ]
+
+[ 2017-01-09T13:36:36+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002059s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2017-01-09T13:36:37+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2017-01-09T13:37:08+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0005s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+
+[ 2017-01-09T13:39:40+08:00 ] 127.0.0.1 /1611/1232/tp1611/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2017-01-09T13:39:42+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001994s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2017-01-09T13:39:43+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2017-01-09T13:40:12+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `tp_user`  [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 102 行.
+
+[ 2017-01-09T13:47:14+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/active.html?a56biiOTWtiDTmgkA+zxiofTwTOrFWhTr14BCKs1cFGF0vuSCTpmOT+MzuA4|47fdD116Pfl/KS0ODML6KeW7VuwUgLxdf0w/8immMN1nZOADCBiVoyc3sCfFSyWv5kr6xsmAINthqI2c/A
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tp_user` WHERE `email` = '332656706@qq.com' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: fromname D:\wamp\www\1611\1232\tp1611\Application\Home\Controller\IndexController.class.php 第 271 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2017-01-09T13:47:19+08:00 ] 127.0.0.1 /1611/1232/tp1611/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_nav` WHERE `is_show` = 1 AND `local` = 0 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: tp1611_user D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant logout - assumed 'logout' D:\wamp\www\1611\1232\tp1611\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+

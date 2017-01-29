@@ -1,0 +1,19 @@
+/* 底部#footer */
+#footer {
+	line-height: 21px;
+
+	text-align: center;
+}
+
+/* 底部样式1（适用注册登录页面） */
+#footer.type1 {
+	padding-top: 9px;
+	background-color: #fff;
+}
+
+/* 底部样式1（适用除注册登录外的页面） */
+#footer.type2 {
+
+	padding-top: 108px;
+	background: url('../images/bg/footer_bg.png') no-repeat center bottom;
+}
